@@ -19,18 +19,19 @@
 <header class="header">
     <h1>Hotel Name</h1>
     <p>description for the hotel</p>
+    <a href="#booking" class="btn">Book Now</a>
 </header>
 <section class="info">
     <div class="box">
-        <h3>location</h3>
+        <h3>📍 location</h3>
         <p>the location of you hotel</p>
     </div>
     <div class="box">
-        <h3>contact</h3>
+        <h3> 📞 contact</h3>
         <p>+20000000000 number of your hotel</p>
     </div>
     <div class="box">
-        <h3>website</h3>
+        <h3>🌐 website</h3>
         <a href="yourwebsite.com">yourwebsite.com</a>
     </div>
 
@@ -38,17 +39,81 @@
 <section class="gallery">
     <h2>Gallery</h2>
     <div class="images">
-        <a id ="img1" href="#img1"><img src="../images/gallery/hotel1/img1.jpg" alt=""></a>
+        <a style="grid-row: span 2;grid-column: span 2;" id ="img1" href="#img1"><img src="../images/gallery/hotel1/img1.jpg" alt=""></a>
         <a id ="img2" href="#img2"><img src="../images/gallery/hotel1/img2.jpg" alt=""></a>
         <a id ="img3" href="#img3"><img src="../images/gallery/hotel1/img3.jpg" alt=""></a>
         <a id ="img4" href="#img4"><img src="../images/gallery/hotel1/img4.jpg" alt=""></a>
         <a id ="img5" href="#img5"><img src="../images/gallery/hotel1/img5.jpg" alt=""></a>
-        <a id ="img6" href="#img6"><img src="../images/gallery/hotel1/img6.jpg" alt=""></a>
-        <a id ="img7" href="#img7"><img src="../images/gallery/hotel1/img7.jpg" alt=""></a>
-        <a id ="img8" href="#img8"><img src="../images/gallery/hotel1/img8.jpg" alt=""></a>
+        <!-- <a id ="img6" href="#img6"><img src="../images/gallery/hotel1/img6.jpg" alt=""></a> -->
+        <!-- <a id ="img7" href="#img7"><img src="../images/gallery/hotel1/img7.jpg" alt=""></a> -->
+        <!-- <a id ="img8" href="#img8"><img src="../images/gallery/hotel1/img8.jpg" alt=""></a> -->
+         <div class="more"> <img class="icon" src="../images/icons/74176.png" alt="" width="1"> +90</div>
         <a href="#"><span>x</span></a>
     </div>
 </section>
+<section class="features">
+    <h2>Why Choose Us</h2>
+    <div class="features-container">
+        <div>🏊 Swimming Pool</div>
+        <div>🍽️ Luxury Restaurant</div>
+        <div>🏋️ Gym & Spa</div>
+        <div>🚗 Free Parking</div>
+    </div>
+</section>
+<div class="menu">
+    <div class="item" data-tab="overview">Overview</div>
+    <div class="item" data-tab="about">About</div>
+    <div class="item" data-tab="rooms">Rooms</div>
+    <div class="item" data-tab="reviews">Ratings</div>
+</div>
+<div class="content">
+
+    <div class="tab active" id="overview">
+        <h2>Overview</h2>
+        <p>
+            Grand Cairo Hotel offers a luxury experience with stunning Nile views,
+            modern rooms, and premium services including spa, pool, and fine dining.
+        </p>
+    </div>
+
+    <div class="tab" id="about">
+        <h2>About</h2>
+        <p>
+            Located in the heart of Cairo, our hotel gives you easy access to the city's
+            most famous attractions while enjoying a peaceful and elegant stay.
+        </p>
+    </div>
+
+    <div class="tab" id="rooms">
+        <h2>Rooms</h2>
+        <ul>
+            <li>Single Room – perfect for solo travelers</li>
+            <li>Double Room – ideal for couples</li>
+            <li>Luxury Suite – full Nile view with premium services</li>
+        </ul>
+    </div>
+
+    <div class="tab" id="reviews">
+        <h2>Reviews</h2>
+
+        <div class="review">
+            <h4>⭐ 5.0 - Ahmed</h4>
+            <p>Amazing hotel! Clean rooms and perfect location.</p>
+        </div>
+
+        <div class="review">
+            <h4>⭐ 4.5 - Sara</h4>
+            <p>Great service and friendly staff, will come again.</p>
+        </div>
+
+        <div class="review">
+            <h4>⭐ 4.0 - John</h4>
+            <p>Very comfortable stay, but breakfast could be better.</p>
+        </div>
+
+    </div>
+
+</div>
 <section class="booking">
 <h2>Book now</h2>
 <form action="../checkout.html">
@@ -66,6 +131,7 @@
 <!-- Nasser task start footer -->
     this is Nasser task footer
 <!-- Nasser task end footer -->
-
+<script src="hotel.js">
+</script>
 </body>
 </html>
