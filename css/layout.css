@@ -1,10 +1,10 @@
 .search-box{
     position: relative;
-    width: 250px;
+    width: 30%;
 }
 .search-box input,
 #number-input{
-    width:100%;
+    width: 100%;
     padding: 12px;
     border-radius: 12px;
     border: 1px solid #ccc;
@@ -16,6 +16,7 @@
     background-color: white;
     border-radius: 12px;
     margin-top: 5px;
+    z-index: 99;
 }
 .dropdown div{
     padding:10px;
@@ -27,9 +28,6 @@
 #place,
 #date{
     display: none;
-}
-#searchInput{
-    
 }
 
 .form-container{
@@ -48,13 +46,19 @@
 @media (max-width:768px) {
     .form-container{
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
-    .search-box{
-        /* width: 100%; */
+    .number-box{
+        width: 100%;
     }
-    #number-inbut{
-        /* width: 100%; */
-    }
+.search-box input,
+.search-box,
+#number-input{
+    /* width:100%; */
+    padding: 12px;
+    border-radius: 12px;
+    /* border: 1px solid #ccc; */
+    width: calc(100% - 24px);
+}
     
 }
