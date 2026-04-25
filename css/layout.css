@@ -69,7 +69,7 @@
                 margin: 0;
                 display: flex;
                 flex-direction: column;
-                min-height: 100vh;
+                min-height: 600vh;
                 font-family: 'Arial', sans-serif;
                 /*بص هنا لازم احط بادي علشان يبقي في فوتر و عمل فونت و الشكل منها دا عام ملوش دعوة باللي اغيره خالص لما ابدا في الهوم */
             }
