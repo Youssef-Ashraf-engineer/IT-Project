@@ -1,10 +1,10 @@
 .search-box{
     position: relative;
-    width: 250px;
+    width: 30%;
 }
 .search-box input,
 #number-input{
-    width:100%;
+    width: 100%;
     padding: 12px;
     border-radius: 12px;
     border: 1px solid #ccc;
@@ -16,6 +16,7 @@
     background-color: white;
     border-radius: 12px;
     margin-top: 5px;
+    z-index: 99;
 }
 .dropdown div{
     padding:10px;
@@ -27,9 +28,6 @@
 #place,
 #date{
     display: none;
-}
-#searchInput{
-    
 }
 
 .form-container{
@@ -48,13 +46,309 @@
 @media (max-width:768px) {
     .form-container{
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
-    .search-box{
-        /* width: 100%; */
+    .number-box{
+        width: 100%;
     }
-    #number-inbut{
-        /* width: 100%; */
-    }
-    
+.search-box input,
+.search-box,
+#number-input{
+    /* width:100%; */
+    padding: 12px;
+    border-radius: 12px;
+    /* border: 1px solid #ccc; */
+    width: calc(100% - 24px);
 }
+    
+}  /*Footer design .........................................................................................*/
+            /* شرح اللي انا عملته سطر سطر */
+            /*explain what i did line by line all the code*/
+            
+            body {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                min-height: 600vh;
+                font-family: 'Arial', sans-serif;
+                /*بص هنا لازم احط بادي علشان يبقي في فوتر و عمل فونت و الشكل منها دا عام ملوش دعوة باللي اغيره خالص لما ابدا في الهوم */
+            }
+            /*START HERE...... */
+            
+            footer {
+                margin-top: auto;
+                /*it makes the footer always down at the bottom */
+                background-color: #457B9D;
+                /* background color */
+                color: #FFFFFF;
+                /* all text will be white in the footer */
+                padding: 0px 20px 0px 10px;
+                /*there is a gap between the line and the content or the "footer" */
+                text-align: left;
+                /* text position i choose it left */
+                /*the height of the footer will be auto to fit the content inside it */
+                margin-bottom: 0 !important;
+                /*to remove any margin from the bottom of the footer and make it 0 to fit the page*/
+                padding-top: 10px !important;
+                padding-bottom: 5px !important;
+            }
+            
+            .footer-container {
+                width: 85%;
+                /*footer space from the page*/
+                margin: 0 0 0 7.5%;
+                /*text alignment and padding by decreasing or increasing the margin of the footer */
+                margin-top: 0 !important;
+            }
+            
+            .main-logo {
+                font-size: 85px;
+                /*size of "Name"*/
+                font-weight: 900;
+                /*the bold weight (السمك مش عارف اكتبها انجليزي)*/
+                letter-spacing: -4px;
+                /* letter space between chars i made it '-' (حروف ملزقة كدا في بعض)*/
+                margin: 0;
+                /*the margin of the logo "name"*/
+                text-transform: uppercase;
+                /*all chars is uppercase*/
+                cursor: pointer;
+                /*cursor: mouse will be pointer hand*/
+                transition: all 0.5s ease;
+                /*these will be the transition properties for all elements in hover */
+                color: #FFFFFF;
+                /*color of the logo "name"*/
+            }
+            /*columns of footer all the box under logo*/
+            
+            .footer-columns {
+                display: flex;
+                /*display will be one:  "account"------- "services" */
+                justify-content: flex-start;
+                /* "account" "services" will be left organized to list another texts under them*/
+                gap: 30px;
+                /* space between "account", "services" */
+                margin-top: 10px;
+                /*the margin of the columns between the logo and the text*/
+            }
+            
+            .label {
+                display: block;
+                /*display will be block under account ,services*/
+                font-size: 13px;
+                /*the text size account ,services*/
+                font-weight: 700;
+                /*the font weight*/
+                color: #FFE066;
+                /*the color of the label*/
+                margin-bottom: 10px;
+                /*gap between the label and the list items*/
+                letter-spacing: 2px;
+                /*the letter space between chars account,services */
+            }
+            /*design of the list under account ,services*/
+            
+            .footer-col ul {
+                list-style: square/*maybe i will change it later*/
+                ;
+                padding: 10px;
+                /*to remove default padding and it must be 0 as we want */
+                margin-top: 0 !important;
+                padding-left: 0 !important;
+                margin-top: 5px !important;
+            }
+            
+            .footer-col li {
+                margin-bottom: 5px !important;
+                display: flex;
+                align-items: center;
+            }
+            /*footer col list design*/
+            
+            .footer-col ul li a {
+                font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+                /*font designs to all computers and browsers*/
+                font-weight: 600;
+                /*the font list (سمك) it is thick*/
+                font-size: 15px;
+                /*font size of texts in the list......*/
+                color: #FFFFFF;
+                /*the color of the text of thh list .....*/
+                opacity: 0.5;
+                /*opacity of the text */
+                transition: all 0.4s ease;
+                /*i will need it to hover under*/
+                display: inline-block;
+                /*style of the organizatin of the text */
+                text-decoration: none;
+                /*added after tha all code to remove underline the link*/
+                margin-top: 5px;
+                line-height: 1;
+            }
+            /*the policy text in the footer (copyright)(حقوق النشر)*/
+            
+            .footer-bottom {
+                display: flex;
+                /*explained above*/
+                justify-content: space-between;
+                /* explained above */
+                font-size: 11px;
+                /*explained above*/
+                opacity: 0.7;
+                /*explained above*/
+                margin-top: 10px !important;
+                padding-top: 10px;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                align-items: center;
+            }
+            /*the hover effect for col inside text under account ,services*/
+            
+            .footer-col ul li a:hover {
+                opacity: 1;
+                /* to make it lighty(علشان لما تطلع تنور ابيض )*/
+                color: #FFE066;
+                /* hover light color */
+                transform: translateX(8px);
+                /*move to right with transiion and flexability */
+            }
+            /*the hover effect for the main logo*/
+            
+            .main-logo:hover {
+                letter-spacing: 2px;
+                /*"Name" move with transition that make the char move away(تتباعد عن بعضها)*/
+                color: #FFE066;
+                /*the hover color for the main logo*/
+                opacity: 0.8;
+            }
+            /*simple hover on the policy text*/
+            /*p to connect that bottom to the text in the bottom*/
+            
+            .footer-bottom p {
+                display: flex;
+                justify-content: space-between;
+                font-size: 11px;
+                opacity: 0.6;
+                /*all above is explained*/
+            }
+            /*the bottom policy hover*/
+            
+            .footer-bottom p:hover {
+                opacity: 1;
+                cursor: default;
+                /*all above is explained*/
+            }
+            
+            .main-logo-link,
+            /*there i call the link for the main logo*/
+            
+            .main-logo-link:visited,
+            /*stated visited */
+            
+            .main-logo-link:active
+            /*stated active */
+            /*if it visited or active make it white */
+            
+            {
+                text-decoration: none;
+                color: #FFFFFF;
+                /*the color for the main logo link*/
+            }
+            /*"ocean breeze" brand section */
+            /*SECTION OF the big text*/
+            
+            .footer-brand-section {
+                margin-bottom: 0px;
+                /*space until the next section*/
+                text-align: center;
+                /*here align section in the center but it big will be from left to right*/
+            }
+            /*bold text design*/
+            
+            .brand-title {
+                color: #FFE066;
+                /*the color*/
+                font-size: 65px;
+                /*the font size*/
+                font-weight: 900;
+                letter-spacing: 4px;
+                /*i don't know but if we want to reduce it okay*/
+                margin: 0;
+                line-height: 1;
+                /*line space under and above that text*/
+                text-transform: uppercase;
+                color: #FFE066;
+                /*the font size*/
+                text-align: right;
+                /*text "yellow"align*/
+            }
+            /*subtitle under the bold text*/
+            
+            .brand-subtitle {
+                color: white;
+                font-family: 'Georgia', serif;
+                /*font family for cool old style,but we can change it*/
+                font-style: italic;
+                /*font style for italic text,from that font family*/
+                font-weight: 300;
+                font-size: 22px;
+                opacity: 0.8;
+                margin-top: 10px;
+                letter-spacing: 2px;
+                /*all explained above*/
+                color: white;
+                /*the color*/
+                text-align: right;
+            }
+            /*end "ocean breeze" brand section */
+            /*social media icons start */
+            /*section*/
+            
+            .brand-socials {
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+                margin-top: 15px;
+            }
+            /* social item section*/
+            
+            .social-item {
+                display: flex;
+                flex-direction: column;
+                /* text under the circle */
+                align-items: center;
+                /* text alignment */
+                gap: 8px;
+                /* space between the circle and the text */
+            }
+            /* circle design*/
+            
+            .icon-circle {
+                width: 40px;
+                height: 40px;
+                background-color: white;
+                border-radius: 50%;
+                /*we can change the border radius to make it a square */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                transition: 0.3s all ease-in-out;
+                /*i will need it in hover effect*/
+            }
+            /*hover effect*/
+            
+            .icon-circle:hover {
+                background-color: #FFE066;
+                /*lighting yellow*/
+                transform: scale(1.1);
+                /*it make the circle bigger when hovered */
+            }
+            /* GitHub و LinkedIn text design */
+            
+            .social-item span {
+                color: #FFE066;
+                font-size: 11px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
