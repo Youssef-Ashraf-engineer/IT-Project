@@ -68,10 +68,10 @@ document.querySelectorAll(".dropdown div").forEach(item => {
 //   datedropdown.style.display = "block";
 // });
 
-// document.querySelectorAll("#datedropdown div").forEach(item => {
-//   item.onclick = () => {
-//     dateinput.value = item.textContent;
-//     datedropdown.style.display = "none";
-//     date.value=item.textContent;
-//   };
-// });
+document.querySelectorAll("#datedropdown div").forEach(item => {
+  item.onclick = () => {
+    dateinput.value = item.textContent;
+    datedropdown.style.display = "none";
+    date.value=item.textContent;
+  };
+});
