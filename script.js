@@ -1,7 +1,8 @@
 function search(){
-  const today = new Date().toISOString().split("T")[0];
-  document.querySelector("#checkininput").value = today;
-  document.querySelector("#checkoutinput").value = today;
+  if(!document.querySelector("#checkininput").value || !document.querySelector("#checkoutinput").value){
+    alert("empty check in or check out")
+    return
+  }
   let hotels = document.querySelectorAll(".hotel-card")
   let placevalue = document.querySelector("#place").value
   let numbervalue = document.querySelector("#number-input").value
