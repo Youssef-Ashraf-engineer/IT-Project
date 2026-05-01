@@ -1,13 +1,21 @@
 .search-box{
     position: relative;
-    width: 30%;
+    width: 100%;
+}
+.labelcontainer{
+    flex:1
 }
 .search-box input,
 #number-input{
-    width: 100%;
+    /* width: 100%; */
+    /* width: calc(100*-12px); */
     padding: 12px;
     border-radius: 12px;
     border: 1px solid #ccc;
+}
+input{
+    width: 100%;
+    box-sizing: border-box;
 }
 .dropdown{
     display: none;
@@ -21,6 +29,10 @@
 .dropdown div{
     padding:10px;
     cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #457b9d;
 }
 .dropdown div:hover{
     background: #f2f2f2;
@@ -37,7 +49,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: #f2f2f2;
+    background: #a8dadc;
     border-radius: 10px;
     align-items: center;
     flex-wrap: wrap;

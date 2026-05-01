@@ -1,4 +1,7 @@
+document.getElementById("searchBtn").addEventListener("click", search());
+
 function search(){
+  console.log("hello")
     let hotels = document.querySelectorAll(".hotel-card")
     let placevalue = document.querySelector("#place").value
     let datevalue = document.querySelector("#date").value
@@ -8,18 +11,34 @@ function search(){
         let dates = element.dataset.date;
         let number = element.dataset.number;
         if(place!==placevalue && placevalue!="all"){
-            element.style.display="none"
+          element.style.display="none"
         }
-        else if(!dates.includes(datevalue) && datevalue!="all"){
-            element.style.display="none"
-        }
+        // else if(!dates.includes(datevalue) && datevalue!="all"){
+        //   element.style.display="none"
+        // }
         else if(number<numbervalue && numbervalue!=0){
-            element.style.display="none"
+          element.style.display="none"
         }
         else{
-            element.style.display="block"
+          element.style.display="block"
         }
-    });
+      });
+      console.log("asdfasdfasdfasdfadf")
+      // const hotels= document.querySelectorAll(".hotel-card");
+const checkin = new Date(document.querySelector("#checkininput").value);
+const checkout = new Date(document.querySelector("#checkoutinput").value);
+      hotels.forEach(hotel=>{
+        const start= new Date(hotel.dataset.start);
+        const end= new Date(hotel.dataset.end);
+        if(checkin>=start && checkout<=end){
+          hotel.style.display="block"
+        }
+        else{
+          hotel.style.display="none"
+      
+        }
+        
+      })
 }
 
 const input = document.getElementById("searchInput");
@@ -40,19 +59,19 @@ document.querySelectorAll(".dropdown div").forEach(item => {
 });
 
 
-const dateinput = document.getElementById("dateInput");
-const datedropdown = document.getElementById("datedropdown");
-const date = document.getElementById("date");
+// const dateinput = document.getElementById("dateInput");
+// const datedropdown = document.getElementById("datedropdown");
+// const date = document.getElementById("date");
 
 
-dateinput.addEventListener("focus", () => {
-  datedropdown.style.display = "block";
-});
+// dateinput.addEventListener("focus", () => {
+//   datedropdown.style.display = "block";
+// });
 
-document.querySelectorAll("#datedropdown div").forEach(item => {
-  item.onclick = () => {
-    dateinput.value = item.textContent;
-    datedropdown.style.display = "none";
-    date.value=item.textContent;
-  };
-});
+// document.querySelectorAll("#datedropdown div").forEach(item => {
+//   item.onclick = () => {
+//     dateinput.value = item.textContent;
+//     datedropdown.style.display = "none";
+//     date.value=item.textContent;
+//   };
+// });

@@ -15,63 +15,46 @@
 <!-- mostafa task start search -->
     <form action="">
         <div class="form-container">
-
-            <!-- <label for="place-select">place:</label> -->
-            <!-- <select name="place" id="palce-select">
-                <option value="all">---</option>
-                <option value="giza">Giza</option>
-                <option value="luxor">luxor</option>
-                <option value="aswan">aswan</option>
-                <option value="alexanderia">Alexanderia</option>
-            </select> -->
-            <div class="search-box">
-                <input type="text" id="searchInput">
-                <input type="text" id="place" value="all">
-                <div class="dropdown" id="dropdown">
-                    <div class="giza">giza</div>
-                    <div class="cairo">cairo</div>
-                    <div class="luxor">luxor</div>
-                    <div class="aswan">aswan</div>
-                </div>
-            </div>
-
-            <div class="search-box">
-                <input type="text" id="dateInput">
-                <input type="text" id="date" value="all">
-                <div class="dropdown" id="datedropdown">
-                    <div class="saturday">saturday</div>
-                    <div class="sunday">sunday</div>
-                    <div class="monday">monday</div>
-                    <div class="tuesday">tuesday</div>
-                    <div class="wednesday">wednesday</div>
-                    <div class="thursday">thursday</div>
-                    <div class="friday">friday</div>
-
-                </div>
-            </div>
-
-
-            <!-- <label for="date-select">date:</label> -->
-            <!-- <select name="Date" id="Date-select">
-                <option value="all">---</option>
-                <option value="saturday">saturday</option>
-                <option value="sunday">sunday</option>
-                <option value="monday">monday</option>
-                <option value="tuesday">tuesday</option>
-                <option value="wednesday">wednesday</option>
-                <option value="thursday">thursday</option>
-                <option value="friday">friday</option>
-            </select> -->
-            <!-- <label for="number-input">number:</label> -->
-            <div class="number-box">
-                <input id="number-input" type="number" placeholder="number of rooms.">
-            </div>
-            <svg onclick="search()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <!-- <button type="button" value="search" onclick="search()">search</button> -->
+<div class="labelcontainer">
+<label for="">Destination</label>
+    <div class="search-box">
+        <input type="text" id="searchInput">
+        <input type="text" id="place" value="all">
+        <div class="dropdown" id="dropdown">
+            <div class="giza">giza</div>
+            <div class="cairo">cairo</div>
+            <div class="luxor">luxor</div>
+            <div class="aswan">aswan</div>
         </div>
+    </div>
+</div>
+<div class="labelcontainer">
+<label for="">Check-in</label>
+    <div class="search-box">
+        <input id="checkininput" type="date">
+    </div>
+</div>
+<div class="labelcontainer">
+<label for="">Check-out</label>
+    <div class="search-box">
+        <input id="checkoutinput" type="date">
+    </div>
+</div>
+<div class="labelcontainer">
+<label for="">Rooms</label>
+     <div class="number-box">
+         <input id="number-input" type="number" placeholder="number of rooms.">
+        </div>
+        <!-- <button type="button" value="search" onclick="search()">search</button> -->
+    </div>
+           <div onclick="search()" id="searchBtn">
+
+               <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+                   <circle cx="11" cy="11" r="8"></circle>
+                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+</div>   
         </form>
 
 <div class="hotel-card" data-place="giza" data-date="saturday,sunday" data-number="30">

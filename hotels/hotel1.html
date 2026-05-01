@@ -85,13 +85,86 @@
     </div>
 
     <div class="tab" id="rooms">
-        <h2>Rooms</h2>
-        <ul>
-            <li>Single Room – perfect for solo travelers</li>
-            <li>Double Room – ideal for couples</li>
-            <li>Luxury Suite – full Nile view with premium services</li>
-        </ul>
-    </div>
+    <h2>Rooms Comparison & Booking</h2>
+
+    <form class="rooms-form">
+
+        <table class="rooms-table">
+            <caption>Choose the best room for your stay</caption>
+
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Room Type</th>
+                    <th>Guests</th>
+                    <th>Services</th>
+                    <th>Price / Night</th>
+                    <th>Nights</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr data-price="50">
+                    <td><input type="radio" name="room" required></td>
+                    <td>Single Room</td>
+                    <td>1</td>
+                    <td>WiFi, TV, AC</td>
+                    <td class="price">$50</td>
+                    <td>
+                        <select class="nights">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </td>
+                    <td class="total">$50</td>
+                </tr>
+
+                <tr data-price="90">
+                    <td><input type="radio" name="room"></td>
+                    <td>Double Room</td>
+                    <td>2</td>
+                    <td>WiFi, TV, AC, Balcony</td>
+                    <td class="price">$90</td>
+                    <td>
+                        <select class="nights">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </td>
+                    <td class="total">$90</td>
+                </tr>
+
+                <tr data-price="180">
+                    <td><input type="radio" name="room"></td>
+                    <td>Luxury Suite</td>
+                    <td>4</td>
+                    <td>WiFi, TV, AC, Nile View, Jacuzzi</td>
+                    <td class="price">$180</td>
+                    <td>
+                        <select class="nights">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </td>
+                    <td class="total">$180</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="6">Grand Total</td>
+                    <td id="grandTotal">$0</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button type="submit" class="choose-btn">Confirm Selection</button>
+    </form>
+</div>
 
     <div class="tab" id="reviews">
         <h2>Reviews</h2>
