@@ -1,44 +1,30 @@
-document.getElementById("searchBtn").addEventListener("click", search());
-
 function search(){
-  console.log("hello")
-    let hotels = document.querySelectorAll(".hotel-card")
-    let placevalue = document.querySelector("#place").value
-    let datevalue = document.querySelector("#date").value
-    let numbervalue = document.querySelector("#number-input").value
-    hotels.forEach(element => {
-        let place = element.dataset.place;
-        let dates = element.dataset.date;
-        let number = element.dataset.number;
-        if(place!==placevalue && placevalue!="all"){
-          element.style.display="none"
-        }
-        // else if(!dates.includes(datevalue) && datevalue!="all"){
-        //   element.style.display="none"
-        // }
-        else if(number<numbervalue && numbervalue!=0){
-          element.style.display="none"
-        }
-        else{
-          element.style.display="block"
-        }
-      });
-      console.log("asdfasdfasdfasdfadf")
-      // const hotels= document.querySelectorAll(".hotel-card");
-const checkin = new Date(document.querySelector("#checkininput").value);
-const checkout = new Date(document.querySelector("#checkoutinput").value);
-      hotels.forEach(hotel=>{
-        const start= new Date(hotel.dataset.start);
-        const end= new Date(hotel.dataset.end);
-        if(checkin>=start && checkout<=end){
-          hotel.style.display="block"
-        }
-        else{
-          hotel.style.display="none"
-      
-        }
-        
-      })
+  const today = new Date().toISOString().split("T")[0];
+  document.querySelector("#checkininput").value = today;
+  document.querySelector("#checkoutinput").value = today;
+  let hotels = document.querySelectorAll(".hotel-card")
+  let placevalue = document.querySelector("#place").value
+  let numbervalue = document.querySelector("#number-input").value
+  const checkin = new Date(document.querySelector("#checkininput").value);
+  const checkout = new Date(document.querySelector("#checkoutinput").value);
+  hotels.forEach(hotel => {
+    let place = hotel.dataset.place;
+    let number = hotel.dataset.number;
+    const start= new Date(hotel.dataset.start);
+    const end= new Date(hotel.dataset.end);
+    if(place!==placevalue && placevalue!="all"){
+      hotel.style.display="none"
+    }
+    else if(!(checkin>=start && checkout<=end)){
+      hotel.style.display="none"
+    }
+    else if(number<numbervalue && numbervalue!=0){
+      hotel.style.display="none"
+    }
+    else{
+      hotel.style.display="block"
+    }
+  });
 }
 
 const input = document.getElementById("searchInput");
@@ -55,23 +41,5 @@ document.querySelectorAll(".dropdown div").forEach(item => {
     input.value = item.textContent;
     dropdown.style.display = "none";
     place.value=item.textContent;
-  };
-});
-
-
-// const dateinput = document.getElementById("dateInput");
-// const datedropdown = document.getElementById("datedropdown");
-// const date = document.getElementById("date");
-
-
-// dateinput.addEventListener("focus", () => {
-//   datedropdown.style.display = "block";
-// });
-
-document.querySelectorAll("#datedropdown div").forEach(item => {
-  item.onclick = () => {
-    dateinput.value = item.textContent;
-    datedropdown.style.display = "none";
-    date.value=item.textContent;
   };
 });
