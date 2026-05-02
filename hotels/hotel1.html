@@ -19,7 +19,7 @@
 <header class="header">
     <h1>Hotel Name</h1>
     <p>description for the hotel</p>
-    <a href="#booking" class="btn">Book Now</a>
+    <a href="#overview" class="btn">Book Now</a>
 </header>
 <section class="info">
     <div class="box">
@@ -47,7 +47,6 @@
         <!-- <a id ="img6" href="#img6"><img src="../images/gallery/hotel1/img6.jpg" alt=""></a> -->
         <!-- <a id ="img7" href="#img7"><img src="../images/gallery/hotel1/img7.jpg" alt=""></a> -->
         <!-- <a id ="img8" href="#img8"><img src="../images/gallery/hotel1/img8.jpg" alt=""></a> -->
-         <div class="more"> <img class="icon" src="../images/icons/74176.png" alt="" width="1"> +90</div>
         <a href="#"><span>x</span></a>
     </div>
 </section>
@@ -62,26 +61,110 @@
 </section>
 <div class="menu">
     <div class="item" data-tab="overview">Overview</div>
-    <div class="item" data-tab="about">About</div>
+    <div class="item" data-tab="faq">faq</div>
     <div class="item" data-tab="rooms">Rooms</div>
     <div class="item" data-tab="reviews">Ratings</div>
 </div>
 <div class="content">
 
     <div class="tab active" id="overview">
-        <h2>Overview</h2>
-        <p>
-            Grand Cairo Hotel offers a luxury experience with stunning Nile views,
-            modern rooms, and premium services including spa, pool, and fine dining.
-        </p>
+       <h2>Overview</h2>
+
+<div class="overview-grid">
+
+  <div class="overview-card">
+    <h3>📍 Location</h3>
+    <p>Cairo, Egypt – Near the Nile Corniche and major attractions</p>
+  </div>
+
+  <div class="overview-card">
+    <h3>⭐ Rating</h3>
+    <p>4.5 / 5 (based on 1,240 guest reviews)</p>
+  </div>
+
+  <div class="overview-card">
+    <h3>🛏️ Rooms</h3>
+    <p>120 modern rooms including suites, doubles, and singles</p>
+  </div>
+
+  <div class="overview-card">
+    <h3>💰 Price Range</h3>
+    <p>From $50 to $180 per night depending on room type</p>
+  </div>
+
+  <div class="overview-card">
+    <h3>🕒 Check-in / Check-out</h3>
+    <p>Check-in: 2:00 PM — Check-out: 12:00 PM</p>
+  </div>
+
+  <div class="overview-card">
+    <h3>📶 Key Features</h3>
+    <p>Free WiFi, Pool, Gym, Spa, Restaurant, Airport shuttle</p>
+  </div>
+
+</div>
     </div>
 
-    <div class="tab" id="about">
-        <h2>About</h2>
-        <p>
-            Located in the heart of Cairo, our hotel gives you easy access to the city's
-            most famous attractions while enjoying a peaceful and elegant stay.
-        </p>
+    <div class="tab" id="faq">
+        <h2>Guest Help Center</h2>
+
+<div class="faq">
+  <h3>🛎️ Booking & Reservations</h3>
+  <p>
+    Guests can book rooms through the website, mobile app, or directly at the hotel reception.
+    After booking, you will receive a confirmation email with all reservation details.
+  </p>
+  <p>
+    In most cases, cancellations are free if done at least 24–48 hours before check-in.
+    However, non-refundable deals offer lower prices but cannot be changed or canceled.
+  </p>
+</div>
+
+<div class="faq">
+  <h3>🍽️ Meals & Dining</h3>
+  <p>
+    Breakfast is served daily in buffet style, offering both local Egyptian dishes and international options.
+    It is included in selected room packages, while other bookings may require an extra fee.
+  </p>
+  <p>
+    The hotel also features a rooftop restaurant, café lounge, and 24-hour room service.
+    Vegetarian and special diet meals can be requested in advance.
+  </p>
+</div>
+
+<div class="faq">
+  <h3>🕒 Check-in & Check-out</h3>
+  <p>
+    Standard check-in starts at 2:00 PM and check-out is at 12:00 PM.
+    Early check-in depends on room availability and may include additional charges.
+  </p>
+  <p>
+    Late check-out is sometimes available for loyal guests or direct bookings, but must be requested in advance.
+  </p>
+</div>
+
+<div class="faq">
+  <h3>📶 Facilities & Services</h3>
+  <p>
+    Guests have access to free high-speed WiFi across the entire property, including rooms and public areas.
+    The hotel also includes a swimming pool, fitness center, spa, and business meeting rooms.
+  </p>
+  <p>
+    Additional services include airport transfers, laundry service, and guided tour booking assistance.
+  </p>
+</div>
+
+<div class="faq">
+  <h3>🚫 Policies & Rules</h3>
+  <p>
+    Smoking is strictly prohibited inside rooms but allowed in designated outdoor areas.
+    Pets are not allowed except for certified service animals.
+  </p>
+  <p>
+    Guests must respect quiet hours between 11:00 PM and 7:00 AM to ensure comfort for all visitors.
+    Violating policies may result in additional charges or booking cancellation.
+  </p>
+</div>
     </div>
 
     <div class="tab" id="rooms">
@@ -123,9 +206,23 @@
 
                 <tr data-price="90">
                     <td><input type="radio" name="room"></td>
-                    <td>Double Room</td>
-                    <td>2</td>
+                    <td rowspan="2">Double Room</td>
+                    <td rowspan="2">2</td>
                     <td>WiFi, TV, AC, Balcony</td>
+                    <td class="price">$90</td>
+                    <td>
+                        <select class="nights">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </td>
+                    <td class="total">$70</td>
+                </tr>                <tr data-price="90">
+                    <td><input type="radio" name="room"></td>
+                    <!-- <td>Double Room</td> -->
+                    <!-- <td>2</td> -->
+                    <td>TV , Balcony</td>
                     <td class="price">$90</td>
                     <td>
                         <select class="nights">
@@ -187,16 +284,6 @@
     </div>
 
 </div>
-<section class="booking">
-<h2>Book now</h2>
-<form action="../checkout.html">
-    <input type="text" placeholder="fullname" required>
-    <input type="date" required>
-    <input type="number" placeholder="Guests" required>
-    <button type="submit">Book Now</button>
-
-</form>
-</section>
     this is mostafa task hotel
 <!-- mostafa task end hotel -->
 

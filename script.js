@@ -1,11 +1,11 @@
 function search(){
   if(!document.querySelector("#checkininput").value || !document.querySelector("#checkoutinput").value){
-    alert("empty check in or check out")
-    return
+    alert("empty check in or check out");
+    return;
   }
   let hotels = document.querySelectorAll(".hotel-card")
-  let placevalue = document.querySelector("#place").value
-  let numbervalue = document.querySelector("#number-input").value
+  let placevalue = document.querySelector("#place").value;
+  let numbervalue = document.querySelector("#number-input").value;
   const checkin = new Date(document.querySelector("#checkininput").value);
   const checkout = new Date(document.querySelector("#checkoutinput").value);
   hotels.forEach(hotel => {
@@ -14,16 +14,16 @@ function search(){
     const start= new Date(hotel.dataset.start);
     const end= new Date(hotel.dataset.end);
     if(place!==placevalue && placevalue!="all"){
-      hotel.style.display="none"
+      hotel.style.display="none";
     }
     else if(!(checkin>=start && checkout<=end)){
-      hotel.style.display="none"
+      hotel.style.display="none";
     }
     else if(number<numbervalue && numbervalue!=0){
-      hotel.style.display="none"
+      hotel.style.display="none";
     }
     else{
-      hotel.style.display="block"
+      hotel.style.display="block";
     }
   });
 }
