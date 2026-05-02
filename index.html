@@ -1,18 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/layout.css">
+    <title>name</title>
+    <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../css/search.css">
+    <!-- <link rel="stylesheet" href="../css/layout.css"> -->
+    <script src="index.js"></script>
 </head>
-<body>
-    
-<!-- Bindawa task start navbar -->
-    this is Bindawa task navbar
-<!-- Bindawa task end navbar -->
+    <!--section header logo/profile/night mode-->
+    <header class="main-header">
+        <!--div in div in div -->
+        <div class="header-container">
 
+            <!--logo-->
+            <div class="logo-section">
+                <h1 class="logo-text">Index logo</h1>
+            </div>
+            <!--this header action bottons-->
+            <div class="header-actions">
+
+                <!--profile section-->
+                <a href="profile.html" class="profile-link">
+                    <div class="profile-circle">
+                        <img src="images/icons/account.png" alt="Account" class="profile-img">
+                    </div>
+                </a>
+
+                <!--theme tagging night/light-->
+                <div class="theme-toggle">
+                    <label class="theme-switch">
+                    <input type="checkbox" id="mode-checkbox"><!--I make it checkbox like right or not switch it right ->light/left->not-->
+                    <div class="slider"></div>
+                </label>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!--task section deleted by leader -->
+    <div class="task-banner">
+        <p>this mb task nav bar</p>
+    </div>
+
+
+<body>
+    <!--here is the hero section make not my task just css you can make it like you want YA-->
+    <section class="deals-container">
+        <div class="deal-card-placeholder" left>
+            <!--empty card-->
+            this is YS task hero
+        </div>
+    </section>
 <!-- mostafa task start search -->
     <form action="">
         <div class="form-container">
@@ -102,34 +144,96 @@
     <!-- mostafa task end search -->
     
 
-<!-- sadek task start hero -->
-    this is sadek task hero
-    <br>
-<!-- sadek task end hero -->
+    <!--the banner section <<hot deals>>-->
+    <section class="premium-banner-section">
+        <div class="premium-banner">
+            <div class="banner-content">
+                <h2>INDEX INDEX ?</h2>
+                <p>index index index index</p>
+            </div>
+            <!--this button just for design you can delete it ,leader-->
+            <button class="premium-btn">Find deals <i class="fa fa-chevron-right"></i></button>
+        </div>
+    </section>
 
+    <!-- hot deals containers section -->
+    <section class="triple-containers">
+        <div class="empty-card">this is YA task best deals </div>
+        <div class="empty-card"></div>
+        <div class="empty-card"></div>
+    </section>
+    <!--slider section-->
+    <section class="hotels-slider-section">
+        <div class="slider-header">
+            <h2>hotels gov YS task</h2>
+            <div class="slider-controls">
+                <!--button left arrow-->
+                <button class="arrow-btn" onclick="scrollSlider(-1)"><i class="fa fa-chevron-left"></i><img src="images/icons/left.png" alt="left" class="btn-icon">
+                </button>
+                <!--button right arrow-->
+                <button class="arrow-btn" onclick="scrollSlider(1)"><i class="fa fa-chevron-right"></i><img src="images/icons/next.png" alt="right" class="btn-icon">
+                </button>
+            </div>
+        </div>
 
-<!-- ashref task start best -->
-    this is ashref task best
-    <br>
-<!-- ashref task end best -->
+        <!--empty containers-->
+        <div class="slider-wrapper" id="hotelSlider">
+            <div class="hotel-card-item"></div>
+            <div class="hotel-card-item"></div>
+            <div class="hotel-card-item"></div>
+            <div class="hotel-card-item"></div>
+            <div class="hotel-card-item"></div>
+            <div class="hotel-card-item"></div>
+            <div class="hotel-card-item"></div>
+            <div class="hotel-card-item"></div>
+        </div>
+    </section>
+    <!-- this section for the destinations -->
+    <section class="destinations-section">
+        <div class="section-title">
+            <h2>index index index index</h2>
+            <p>index index index index</p>
+        </div>
 
-<!-- sadek task start gov -->
-this is sadek task gov
-<br>
-<!-- sadek task end gov -->
+        <div class="destinations-grid">
+            <!-- div div div to simple in css , this is first card-->
+            <div class="dest-card card-large">
+                <div class="dest-overlay">
+                    <h3>index</h3>
+                    <span>2 Hotels</span>
+                </div>
+            </div>
 
-<!-- Nasser task start index -->
-    this is Nasser task index
-    <br>
-<!-- Nasser task end index -->
+            <!-- second destination card-->
+            <div class="dest-card">
+                <div class="dest-overlay">
+                    <h3>index</h3>
+                    <span>2 Hotels</span>
+                </div>
+            </div>
 
+            <!-- third destination card-->
+            <div class="dest-card">
+                <div class="dest-overlay">
+                    <h3>index</h3>
+                    <span>2 Hotels</span>
+                </div>
+            </div>
 
-<!-- Nasser task start footer -->
-      <footer>
+            <!-- fourth destination card-->
+            <div class="dest-card">
+                <div class="dest-overlay">
+                    <h3>index</h3>
+                    <span>2 Hotels</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
 
         <div class="footer-container ">
             <a href="index.html " class="main-logo-link ">
-                <h1 class="main-logo ">CHECK IN</h1>
+                <h1 class="main-logo ">INDEX index</h1>
             </a>
             <div class="footer-columns ">
                 <div class="footer-col ">
@@ -145,29 +249,28 @@ this is sadek task gov
                     <span class="label ">SERVICES :</span>
                     <ul>
                         <li><a href="hotels.html ">Hotels</a></li>
-                        <li><a href="contact.html ">Contact Us</a></li>
+                        <li>
+                            <a href="contact.html ">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-brand-section ">
                 <!--this section contains the the text title"bold ",subtitle"italic "-->
-                <h2 class="brand-title ">GO BEACH</h2>
-                <p class="brand-subtitle ">L'art de vivre au bord de la mer</p>
+                <h2 class="brand-title ">INDEX index</h2>
+                <p class="brand-subtitle ">index index index index</p>
                 <!--this section contains the social media links-->
                 <div class="brand-socials ">
                     <div class="social-item ">
                         <a href="https://github.com/Youssef-Ashraf-engineer/IT-Project " target="_blank " class="icon-circle ">
                             <i class="fab fa-github "></i>
-                              <img src="images/icons/github.png" alt="GitHub" height="45px" /> </a>
-                        </a> <span>GitHub</span>
-
-
+                            <img src="images/icons/github.png " alt="GitHub " height="45px " /> </a>
+                        <span>GitHub</span>
                     </div>
                     <div class="social-item ">
                         <a href="https://www.linkedin.com/in/youssef-nasser-8a09203a9 " target="_blank " class="icon-circle ">
-                            <i class="fab fa-linkedin "></i>
-                            <img src="images/icons/linkedin.png" alt="LinkedIn" height="45px" />
+                            <i class="fab fa-linkedin "></i> <img src="images/icons/linkedin.png " alt="LinkedIn " height="45px " />
                         </a> <span>LinkedIn</span>
 
                     </div>
@@ -182,11 +285,6 @@ this is sadek task gov
         </div>
         </div>
     </footer>
-
-    
-<!-- Nasser task end footer -->
-
-<script src="script.js"></script>
-
 </body>
+
 </html>

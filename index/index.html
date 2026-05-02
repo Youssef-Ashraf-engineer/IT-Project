@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>name</title>
     <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="../css/search.css">
+    <!-- <link rel="stylesheet" href="../css/layout.css"> -->
     <script src="index.js"></script>
+</head>
     <!--section header logo/profile/night mode-->
     <header class="main-header">
         <!--div in div in div -->
@@ -43,7 +46,6 @@
         <p>this mb task nav bar</p>
     </div>
 
-</head>
 
 <body>
     <!--here is the hero section make not my task just css you can make it like you want YA-->
@@ -53,11 +55,95 @@
             this is YS task hero
         </div>
     </section>
-    <!--task sectin deleted by leader -->
-    <div class="task-banner">
-        <p>this Mm task search bar
-        </p>
+<!-- mostafa task start search -->
+    <form action="">
+        <div class="form-container">
+<div class="labelcontainer">
+<label for="">Destination</label>
+    <div class="search-box">
+        <input type="text" id="searchInput">
+        <input type="text" id="place" value="all">
+        <div class="dropdown" id="dropdown">
+            <div class="giza">giza</div>
+            <div class="cairo">cairo</div>
+            <div class="luxor">luxor</div>
+            <div class="aswan">aswan</div>
+        </div>
     </div>
+</div>
+<div class="labelcontainer">
+<label for="">Check-in</label>
+    <div class="search-box">
+        <input id="checkininput" type="date" lang="ar-EG">
+    </div>
+</div>
+<div class="labelcontainer">
+<label for="">Check-out</label>
+    <div class="search-box">
+        <input id="checkoutinput" type="date" lang="ar-EG">
+    </div>
+</div>
+<div class="labelcontainer">
+<label for="">Rooms</label>
+     <div class="number-box">
+         <input id="number-input" type="number" placeholder="number of rooms.">
+        </div>
+        <!-- <button type="button" value="search" onclick="search()">search</button> -->
+    </div>
+           <div onclick="search()" id="searchBtn">
+
+               <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
+                   <circle cx="11" cy="11" r="8"></circle>
+                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+</div>   
+        </form>
+<div class="hotels">
+    <div class="hotel-card" data-place="giza" data-start="2026-05-02" data-end="2026-05-12" data-number="28">
+  place: giza | available from May 2 → May 12 | rooms: 28
+</div>
+
+<div class="hotel-card" data-place="giza" data-start="2026-05-05" data-end="2026-05-15" data-number="18">
+  place: giza | available from May 5 → May 15 | rooms: 18
+</div>
+
+<div class="hotel-card" data-place="cairo" data-start="2026-05-01" data-end="2026-05-20" data-number="42">
+  place: cairo | available from May 1 → May 20 | rooms: 42
+</div>
+
+<div class="hotel-card" data-place="cairo" data-start="2026-05-10" data-end="2026-05-18" data-number="16">
+  place: cairo | available from May 10 → May 18 | rooms: 16
+</div>
+
+<div class="hotel-card" data-place="luxor" data-start="2026-05-03" data-end="2026-05-11" data-number="12">
+  place: luxor | available from May 3 → May 11 | rooms: 12
+</div>
+
+<div class="hotel-card" data-place="luxor" data-start="2026-05-08" data-end="2026-05-17" data-number="20">
+  place: luxor | available from May 8 → May 17 | rooms: 20
+</div>
+
+<div class="hotel-card" data-place="aswan" data-start="2026-05-04" data-end="2026-05-14" data-number="25">
+  place: aswan | available from May 4 → May 14 | rooms: 25
+</div>
+
+<div class="hotel-card" data-place="aswan" data-start="2026-05-09" data-end="2026-05-19" data-number="14">
+  place: aswan | available from May 9 → May 19 | rooms: 14
+</div>
+
+<div class="hotel-card" data-place="alexandria" data-start="2026-05-01" data-end="2026-05-10" data-number="30">
+  place: alexandria | available from May 1 → May 10 | rooms: 30
+</div>
+
+<div class="hotel-card" data-place="alexandria" data-start="2026-05-06" data-end="2026-05-16" data-number="19">
+  place: alexandria | available from May 6 → May 16 | rooms: 19
+</div>
+</div>
+    this is mostafa task search <br>
+    <!-- mostafa task end search -->
+    
+
     <!--the banner section <<hot deals>>-->
     <section class="premium-banner-section">
         <div class="premium-banner">
