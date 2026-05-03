@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/pages/hotel.css">
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="css/pages/hotel.css">
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
     
@@ -17,9 +17,12 @@
 
 <!-- mostafa task start hotel -->
 <header class="header">
-    <h1>Hotel Name</h1>
-    <p>description for the hotel</p>
-    <a href="#overview" class="btn">Book Now</a>
+    <img id="hedear-img" src="images/llllllll.jpg" alt="">
+    <div class="heder-text">
+        <h1>Hotel Name</h1>
+        <p>description for the hotel</p>
+        <a href="#features" class="btn">Book Now</a>
+    </div>
 </header>
 <section class="info">
     <div class="box">
@@ -50,7 +53,7 @@
         <a href="#"><span>x</span></a>
     </div>
 </section>
-<section class="features">
+<section class="features" id="features">
     <h2>Why Choose Us</h2>
     <div class="features-container">
         <div>🏊 Swimming Pool</div>
@@ -64,6 +67,8 @@
     <div class="item" data-tab="faq">faq</div>
     <div class="item" data-tab="rooms">Rooms</div>
     <div class="item" data-tab="reviews">Ratings</div>
+    <div class="item" data-tab="review">review</div>
+
 </div>
 <div class="content">
 
@@ -74,32 +79,32 @@
 
   <div class="overview-card">
     <h3>📍 Location</h3>
-    <p>Cairo, Egypt – Near the Nile Corniche and major attractions</p>
+    <p id="location-overview">Cairo, Egypt – Near the Nile Corniche and major attractions</p>
   </div>
 
   <div class="overview-card">
     <h3>⭐ Rating</h3>
-    <p>4.5 / 5 (based on 1,240 guest reviews)</p>
+    <p id="rating-overview">4.5 / 5 (based on 1,240 guest reviews)</p>
   </div>
 
   <div class="overview-card">
     <h3>🛏️ Rooms</h3>
-    <p>120 modern rooms including suites, doubles, and singles</p>
+    <p id="rooms-overview">120 modern rooms including suites, doubles, and singles</p>
   </div>
 
   <div class="overview-card">
     <h3>💰 Price Range</h3>
-    <p>From $50 to $180 per night depending on room type</p>
+    <p id="price-overview">From $50 to $180 per night depending on room type</p>
   </div>
 
   <div class="overview-card">
     <h3>🕒 Check-in / Check-out</h3>
-    <p>Check-in: 2:00 PM — Check-out: 12:00 PM</p>
+    <p id="check-in-overview">Check-in: 2:00 PM — Check-out: 12:00 PM</p>
   </div>
 
   <div class="overview-card">
     <h3>📶 Key Features</h3>
-    <p>Free WiFi, Pool, Gym, Spa, Restaurant, Airport shuttle</p>
+    <p id="features-overview">Free WiFi, Pool, Gym, Spa, Restaurant, Airport shuttle</p>
   </div>
 
 </div>
@@ -282,6 +287,26 @@
         </div>
 
     </div>
+    <div class="tab" id="review">
+        <form action="thankyou.html">
+            <h3 id="review-title">add your rating</h3>
+            <input name="name" type="text" id="username" placeholder="your name" required>
+            <input name="email" type="email id="useremail" placeholder="your email" required>
+            <select name="rating" id="userRating">
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+            <textarea name="comment" id="userComment" placeholder="write your review" required></textarea>
+            <textarea name="pros" id="pros" placeholder="write pros" required></textarea>
+            <textarea name="cons" id="cons" placeholder="write cons" required></textarea>
+            <input type="submit">
+        </form>
+    </div>
+    
+
 
 </div>
     this is mostafa task hotel
@@ -291,7 +316,8 @@
 <!-- Nasser task start footer -->
     this is Nasser task footer
 <!-- Nasser task end footer -->
-<script src="hotel.js">
+<script src="js/load.js"></script>
+<script src="js/hotel.js">
 </script>
 </body>
 </html>
