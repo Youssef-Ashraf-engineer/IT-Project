@@ -124,9 +124,22 @@ function addTaskToArray(username, lastname, email, password, idnumber, numbers, 
         IDNationl: idnumber,
         Number1: numbers,
         Birth: birth,
-        Photo: photo,
+        Photo: localStorage.getItem("recent-image"),
     };
     arrayOfTask.push(task);
     window.localStorage.setItem("allUsers",JSON.stringify(arrayOfTask));
 }
+// make the image text
+
+const fileImage = document.getElementById("photo");
+
+fileImage.addEventListener("change",e => {
+    const file = fileImage.files[0];
+    const reader = new FileReader();
+
+    reader.addEventListener("load",() =>{
+        localStorage.setItem("recent-image",reader.result);
+    });
+    reader.readAsDataURL(file);
+});
 
