@@ -9,194 +9,186 @@
     <link rel="stylesheet" href="css/search.css">
     <!-- <link rel="stylesheet" href="../css/layout.css"> -->
 </head>
-    <!--section header logo/profile/night mode-->
-    <header class="main-header">
-        <!--div in div in div -->
-        <div class="header-container">
+<!--section header logo/profile/night mode-->
+<header class="main-header">
+    <!--div in div in div -->
+    <div class="header-container">
 
-            <!--logo-->
-            <div class="logo-section">
+        <!--logo-->
+        <div class="logo-section">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
                 <h1 class="logo-text">Index logo</h1>
-            </div>
-            <!--this header action bottons-->
-            <div class="header-actions">
 
-                <!--profile section-->
-                <a href="profile.html" class="profile-link">
-                    <div class="profile-circle">
-                        <img src="images/icons/account.png" alt="Account" class="profile-img">
-                    </div>
-                </a>
-
-                <!--theme tagging night/light-->
-                <div class="theme-toggle">
-                    <label class="theme-switch">
-                    <input type="checkbox" id="mode-checkbox"><!--I make it checkbox like right or not switch it right ->light/left->not-->
-                    <div class="slider"></div>
-                </label>
-                </div>
-
-            </div>
+            </a>
         </div>
-    </header>
+        <!--this header action bottons-->
+        <div class=" header-actions ">
 
-    <!--task section deleted by leader -->
-    <div class="task-banner">
-        <p>this mb task nav bar</p>
+            <!--profile section-->
+            <a href="profile.html " class="profile-link ">
+                <div class="profile-circle ">
+                    <img src="images/icons/account.png " alt="Account " class="profile-img ">
+                </div>
+            </a>
+
+            <!--theme tagging night/light-->
+            <div class="theme-toggle ">
+                <label class="theme-switch ">
+                    <input type="checkbox " id="mode-checkbox "><!--I make it checkbox like right or not switch it right ->light/left->not-->
+                    <div class="slider "></div>
+                </label>
+            </div>
+
+        </div>
     </div>
+</header>
+
+<!--task section deleted by leader -->
+<div class="task-banner ">
+    <p>this mb task nav bar</p>
+</div>
 
 
 <body>
     <!--here is the hero section make not my task just css you can make it like you want YA-->
-    <section class="deals-container">
-        <iframe src="hero.html" frameborder="0" style="width: 100%;height: 100vh;"></iframe>
+    <section class="deals-container ">
+        <iframe src="hero.html " frameborder="0 " style="width: 100%;height: 100vh; "></iframe>
     </section>
-<!-- mostafa task start search -->
-    <form action="">
-        <div class="form-container">
-<div class="labelcontainer">
-<label for="">Destination</label>
-    <div class="search-box">
-        <input type="text" id="searchInput">
-        <input type="text" id="place" value="all">
-        <div class="dropdown" id="dropdown">
-            <div class="giza">giza</div>
-            <div class="cairo">cairo</div>
-            <div class="luxor">luxor</div>
-            <div class="aswan">aswan</div>
-        </div>
-    </div>
-</div>
-<div class="labelcontainer">
-<label for="">Check-in</label>
-    <div class="search-box">
-        <input id="checkininput" type="date" lang="ar-EG">
-    </div>
-</div>
-<div class="labelcontainer">
-<label for="">Check-out</label>
-    <div class="search-box">
-        <input id="checkoutinput" type="date" lang="ar-EG">
-    </div>
-</div>
-<div class="labelcontainer">
-<label for="">Rooms</label>
-     <div class="number-box">
-         <input id="number-input" type="number" placeholder="number of rooms.">
-        </div>
-        <!-- <button type="button" value="search" onclick="search()">search</button> -->
-    </div>
-           <div onclick="search()" id="searchBtn">
+    <!-- mostafa task start search -->
+    <form action=" ">
+        <div class="form-container ">
+            <div class="labelcontainer ">
+                <label for=" ">Destination</label>
+                <div class="search-box ">
+                    <input type="text " id="searchInput ">
+                    <input type="text " id="place " value="all ">
+                    <div class="dropdown " id="dropdown ">
+                        <div class="giza ">giza</div>
+                        <div class="cairo ">cairo</div>
+                        <div class="luxor ">luxor</div>
+                        <div class="aswan ">aswan</div>
+                    </div>
+                </div>
+            </div>
+            <div class="labelcontainer ">
+                <label for=" ">Check-in</label>
+                <div class="search-box ">
+                    <input id="checkininput " type="date " lang="ar-EG ">
+                </div>
+            </div>
+            <div class="labelcontainer ">
+                <label for=" ">Check-out</label>
+                <div class="search-box ">
+                    <input id="checkoutinput " type="date " lang="ar-EG ">
+                </div>
+            </div>
+            <div class="labelcontainer ">
+                <label for=" ">Rooms</label>
+                <div class="number-box ">
+                    <input id="number-input " type="number " placeholder="number of rooms. ">
+                </div>
+                <!-- <button type="button " value="search " onclick="search() ">search</button> -->
+            </div>
+            <div onclick="search() " id="searchBtn ">
 
-               <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon">
-                   <circle cx="11" cy="11" r="8"></circle>
-                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round " class="search-icon ">
+                   <circle cx="11 " cy="11 " r="8 "></circle>
+                   <line x1="21 " y1="21 " x2="16.65 " y2="16.65 "></line>
                 </svg>
             </div>
-</div>   
-        </form>
-        <div class="hotels">
-            <div class="hotels-grid" id="hotelsContainer">
-                <a href="hotel.html?id=1">
-                    <div class="hotel-card" data-place="giza" data-start="2026-05-02" data-end="2026-05-12" data-number="28">
-                        <img src="images/llllllll.jpg" alt="">
-                        <div class="cardbody">
-                            <h3 id="hotelName">hotel name</h3>
-                            <p id="location">location</p>
-                            <p id="rating">rating : 4.5⭐ </p>
-                            <p id="description">description</p>
-                            <h5 id="price">80$/night</h5>
-                            <button href="hotels/hotel1.html?id=1">view</button>
-                        </div>
-                    </div>  
-                </a>
-            </div>
         </div>
+    </form>
+    <div class="hotels ">
+        <div class="hotels-grid " id="hotelsContainer ">
+            <a href="hotel.html?id=1 ">
+                <div class="hotel-card " data-place="giza " data-start="2026-05-02 " data-end="2026-05-12 " data-number="28 ">
+                    <img src="images/llllllll.jpg " alt=" ">
+                    <div class="cardbody ">
+                        <h3 id="hotelName ">hotel name</h3>
+                        <p id="location ">location</p>
+                        <p id="rating ">rating : 4.5⭐ </p>
+                        <p id="description ">description</p>
+                        <h5 id="price ">80$/night</h5>
+                        <button href="hotels/hotel1.html?id=1 ">view</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 
-</div>
+    </div>
     this is mostafa task search <br>
     <!-- mostafa task end search -->
-    
 
-    <!--the banner section <<hot deals>>-->
-    <section class="premium-banner-section">
-        <div class="premium-banner">
-            <div class="banner-content">
-                <h2>INDEX INDEX ?</h2>
-                <p>index index index index</p>
-            </div>
-            <!--this button just for design you can delete it ,leader-->
-            <button class="premium-btn">Find deals <i class="fa fa-chevron-right"></i></button>
-        </div>
-    </section>
+
 
     <!-- hot deals containers section -->
-    <section class="triple-containers">
-        <div class="empty-card">this is YA task best deals </div>
-        <div class="empty-card"></div>
-        <div class="empty-card"></div>
+    <section class="triple-containers ">
+        <div class="empty-card ">this is YA task best deals </div>
+        <div class="empty-card "></div>
+        <div class="empty-card "></div>
     </section>
     <!--slider section-->
-    <section class="hotels-slider-section">
-        <div class="slider-header">
+    <section class="hotels-slider-section ">
+        <div class="slider-header ">
             <h2>hotels gov YS task</h2>
-            <div class="slider-controls">
+            <div class="slider-controls ">
                 <!--button left arrow-->
-                <button class="arrow-btn" onclick="scrollSlider(-1)"><i class="fa fa-chevron-left"></i><img src="images/icons/left.png" alt="left" class="btn-icon">
+                <button class="arrow-btn " onclick="scrollSlider(-1) "><i class="fa fa-chevron-left "></i><img src="images/icons/left.png " alt="left " class="btn-icon ">
                 </button>
                 <!--button right arrow-->
-                <button class="arrow-btn" onclick="scrollSlider(1)"><i class="fa fa-chevron-right"></i><img src="images/icons/next.png" alt="right" class="btn-icon">
+                <button class="arrow-btn " onclick="scrollSlider(1) "><i class="fa fa-chevron-right "></i><img src="images/icons/next.png " alt="right " class="btn-icon ">
                 </button>
             </div>
         </div>
 
         <!--empty containers-->
-        <div class="slider-wrapper" id="hotelSlider">
-            <div class="hotel-card-item"></div>
-            <div class="hotel-card-item"></div>
-            <div class="hotel-card-item"></div>
-            <div class="hotel-card-item"></div>
-            <div class="hotel-card-item"></div>
-            <div class="hotel-card-item"></div>
-            <div class="hotel-card-item"></div>
-            <div class="hotel-card-item"></div>
+        <div class="slider-wrapper " id="hotelSlider ">
+            <div class="hotel-card-item "></div>
+            <div class="hotel-card-item "></div>
+            <div class="hotel-card-item "></div>
+            <div class="hotel-card-item "></div>
+            <div class="hotel-card-item "></div>
+            <div class="hotel-card-item "></div>
+            <div class="hotel-card-item "></div>
+            <div class="hotel-card-item "></div>
         </div>
     </section>
     <!-- this section for the destinations -->
-    <section class="destinations-section">
-        <div class="section-title">
+    <section class="destinations-section ">
+        <div class="section-title ">
             <h2>index index index index</h2>
             <p>index index index index</p>
         </div>
 
-        <div class="destinations-grid">
+        <div class="destinations-grid ">
             <!-- div div div to simple in css , this is first card-->
-            <div class="dest-card card-large">
-                <div class="dest-overlay">
+            <div class="dest-card card-large ">
+                <div class="dest-overlay ">
                     <h3>index</h3>
                     <span>2 Hotels</span>
                 </div>
             </div>
 
             <!-- second destination card-->
-            <div class="dest-card">
-                <div class="dest-overlay">
+            <div class="dest-card ">
+                <div class="dest-overlay ">
                     <h3>index</h3>
                     <span>2 Hotels</span>
                 </div>
             </div>
 
             <!-- third destination card-->
-            <div class="dest-card">
-                <div class="dest-overlay">
+            <div class="dest-card ">
+                <div class="dest-overlay ">
                     <h3>index</h3>
                     <span>2 Hotels</span>
                 </div>
             </div>
 
             <!-- fourth destination card-->
-            <div class="dest-card">
-                <div class="dest-overlay">
+            <div class="dest-card ">
+                <div class="dest-overlay ">
                     <h3>index</h3>
                     <span>2 Hotels</span>
                 </div>
@@ -259,9 +251,9 @@
         </div>
         </div>
     </footer>
-    <script src="js/index.js"></script>
-    <script src="js/search.js"></script>
-    <script src="js/indexload.js"></script>
+    <script src="js/index.js "></script>
+    <script src="js/search.js "></script>
+    <script src="js/indexload.js "></script>
 </body>
 
 </html>
