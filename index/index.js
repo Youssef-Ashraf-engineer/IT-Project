@@ -11,4 +11,11 @@ function scrollSlider(direction) {
         left: direction * scrollAmount,
         behavior: 'smooth'
     });
-}
+}document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.getElementById('mode-checkbox');
+    if (toggle) {
+        toggle.onclick = () => {
+            document.body.classList.toggle('night-vision');
+        };
+    }
+});
