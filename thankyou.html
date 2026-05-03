@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        font-family: Arial;
+        background: #f5f5f5;
+        text-align: center;
+        padding: 50px;
+        }
+
+        .box {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 300px;
+        margin: auto;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stars {
+        color: gold;
+        font-size: 20px;
+        }
+
+        a {
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: white;
+        background: #457B9D;
+        padding: 10px 15px;
+        border-radius: 6px;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <audio src="thankyou.mp3" autoplay></audio>
+    <div class="box">
+        <h2>Thank You</h2>
+        <img src="images/thankyou.jpg" alt="">
+        <p id="name">name</p>
+        <p id="email">email</p>
+        <p id="rating">rating</p>
+        <p id="comment">comment</p>
+        <p id="pros">pros</p>
+        <p id="cons">comment</p>
+        <a href="index.html">Back to Home</a>
+    </div>
+
+    <script>
+        const parms= new URLSearchParams(window.location.search)
+        document.getElementById("name").textContent="Name:"+parms.get("name")
+        document.getElementById("email").textContent="email:"+parms.get("email")
+        document.getElementById("rating").textContent="rating:"+"⭐".repeat(parms.get("rating"))
+        document.getElementById("comment").textContent="comment:"+parms.get("comment")
+        document.getElementById("pros").textContent="pros:"+parms.get("pros")
+        document.getElementById("cons").textContent="cons:"+parms.get("cons")
+</script>
+</body>
+</html>

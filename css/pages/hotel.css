@@ -12,20 +12,25 @@ h1{
     text-align: center;
 }
 .header{
-    min-height: 60vh;
+    /* min-height: 60vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 60px;
+    /* padding: 40px 60px; */
     /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),center/cover; */
-    background: 
-  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-  url('../../images/gallery/hotel1/img4.jpg') center/cover;
+    /* background:  */
+  /* linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), */
+  /* url('../../images/gallery/hotel1/img4.jpg') center/cover; */
     color: white;
     text-align: center;
 }
-
+.header img{
+    width: 100%;
+}
+.heder-text{
+    position: absolute;
+}
 .header h1{
     font-size: 50px;
     margin: 0;
@@ -338,3 +343,24 @@ section{
     color: #457B9D;
 }
 
+#review form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+#review form input,
+#review form textarea,
+#review form select{
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+    width: 80%;
+}
+#review-title{
+    font-weight: bold;
+    font-size: 34px;
+    text-transform: capitalize;
+}

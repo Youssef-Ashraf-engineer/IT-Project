@@ -1,6 +1,11 @@
-const hotelId = new URLSearchParams(window.location.search).get("id")
+let hotelId = new URLSearchParams(window.location.search).get("id")
 // const hotelId = 1
-
+if (!hotelId){
+  console.warn("mising id param default id is choosed");
+  alert("mising id param default id is choosed")
+  
+  hotelId=1
+}
 fetch("../hotels.json").then(res => res.json()).then(data =>{
     const hotel = data.hotels.find(h=>h.id == hotelId)
     loadHotel(hotel)
