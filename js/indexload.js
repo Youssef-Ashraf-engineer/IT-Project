@@ -1,4 +1,4 @@
-fetch("../hotels.json")
+fetch("hotels.json")
 .then(res => res.json())
 .then(data =>{
     const container = document.getElementById("hotelsContainer")
