@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giza Hotels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hotels-section">
+    <h2 class="title">Hotels in Giza</h2>
+
+    <div class="main-layout">
+        
+        <div class="hotels-grid" id="hotelsGrid">
+            
+            <div class="hotel-card" data-stars="5" data-price="4500">
+                <img src="mena-house.jpg" alt="Marriott Mena House">
+                <div class="hotel-details">
+                    <h3>Marriott Mena House, Giza</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p><strong>Location:</strong> Directly at the foot of the Great Pyramids of Giza, surrounded by 40 acres of green gardens.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Royal history: Originally a royal hunting lodge built in 1869.</li>
+                        <li>Breathtaking views of the Pyramids from balconies and restaurants.</li>
+                        <li>Luxurious swimming pool and world-class spa facilities.</li>
+                        <li>Price starts from: <strong>4500 EGP</strong></li>
+                    </ul>
+                    <a href="checkout.html" class="btn">Show details</a>
+                </div>
+            </div>
+
+            <div class="hotel-card" data-stars="4" data-price="2800">
+                <img src="steigenberger.jpg" alt="Steigenberger Pyramids">
+                <div class="hotel-details">
+                    <h3>Steigenberger Pyramids Cairo</h3>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p><strong>Location:</strong> Very close to the Grand Egyptian Museum and the Pyramids entrance.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Modern and stylish rooms designed for comfort.</li>
+                        <li>Outdoor pool with a direct view of the Giza Plateau.</li>
+                        <li>Walking distance to the Grand Egyptian Museum (GEM).</li>
+                        <li>Price starts from: <strong>2800 EGP</strong></li>
+                    </ul>
+                    <a href="checkout.html" class="btn">Show details</a>
+                </div>
+            </div>
+
+        </div> <aside class="sidebar-filter">
+            <h2 class="filter-title">Filters</h2>
+
+            <div class="filter-box">
+                <label>Search by name:</label>
+                <input type="text" id="searchInput" placeholder="Search hotel..." oninput="filterHotels()">
+            </div>
+
+            <div class="filter-box">
+                <label>Hotel Rating:</label>
+                <select id="starsFilter" onchange="filterHotels()">
+                    <option value="all">All Ratings</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label>Price Range:</label>
+                <div class="price-inputs">
+                    <input type="number" id="minPrice" placeholder="Min" oninput="filterHotels()">
+                    <input type="number" id="maxPrice" placeholder="Max" oninput="filterHotels()">
+                </div>
+            </div>
+
+            <button class="clear-btn" onclick="clearFilters()">Reset Filters</button>
+        </aside>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

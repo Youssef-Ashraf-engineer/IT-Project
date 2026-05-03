@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandria Hotels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hotels-section">
+    <h2 class="title">Hotels in Alexandria</h2>
+
+    <div class="main-layout">
+        
+        <div class="hotels-grid" id="hotelsGrid">
+            
+            <div class="hotel-card" data-stars="5" data-price="7500">
+                <img src="four-seasons-alex.jpg" alt="Four Seasons San Stefano">
+                <div class="hotel-details">
+                    <h3>Four Seasons Resort Alexandria at San Stefano</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p><strong>Location:</strong> Set in a grand plaza building on the Corniche, overlooking the Mediterranean Sea.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Private beach access and a luxurious infinity pool.</li>
+                        <li>Spacious rooms with private balconies featuring sea or city views.</li>
+                        <li>European-style spa and high-end fitness center.</li>
+                        <li>Diverse dining including Italian and seafood specialties.</li>
+                        <li>Price starts from: <strong>7500 EGP</strong></li>
+                    </ul>
+                    <a href="checkout.html" class="btn">Show details</a>
+                </div>
+            </div>
+
+            <div class="hotel-card" data-stars="4" data-price="3200">
+                <img src="helnan-palestine.jpg" alt="Helnan Palestine">
+                <div class="hotel-details">
+                    <h3>Helnan Palestine Hotel</h3>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p><strong>Location:</strong> Located within the lush gardens of Montaza Palace, right on the edge of the sea.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Unique historic location with direct views of the Mediterranean and the Royal Palace.</li>
+                        <li>Private beach and quiet, secluded atmosphere.</li>
+                        <li>Close to the famous Montaza Park and beaches.</li>
+                        <li>Excellent for families and relaxing getaways.</li>
+                        <li>Price starts from: <strong>3200 EGP</strong></li>
+                    </ul>
+                    <a href="checkout.html" class="btn">Show details</a>
+                </div>
+            </div>
+
+        </div> <aside class="sidebar-filter">
+            <h2 class="filter-title">Filters</h2>
+
+            <div class="filter-box">
+                <label>Search by name:</label>
+                <input type="text" id="searchInput" placeholder="Search hotel..." oninput="filterHotels()">
+            </div>
+
+            <div class="filter-box">
+                <label>Hotel Rating:</label>
+                <select id="starsFilter" onchange="filterHotels()">
+                    <option value="all">All Ratings</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label>Price Range:</label>
+                <div class="price-inputs">
+                    <input type="number" id="minPrice" placeholder="Min" oninput="filterHotels()">
+                    <input type="number" id="maxPrice" placeholder="Max" oninput="filterHotels()">
+                </div>
+            </div>
+
+            <button class="clear-btn" onclick="clearFilters()">Reset Filters</button>
+        </aside>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

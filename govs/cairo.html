@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cairo Hotels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hotels-section">
+    <h2 class="title">Hotels in Cairo</h2>
+
+    <div class="main-layout">
+        
+        <div class="hotels-grid" id="hotelsGrid">
+            
+            <div class="hotel-card" data-stars="5" data-price="9500">
+                <img src="ritz.jpg" alt="The Nile Ritz-Carlton">
+                <div class="hotel-details">
+                    <h3>The Nile Ritz-Carlton, Cairo</h3>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p><strong>Location:</strong> Located between the Nile River and Tahrir Square, next to the Egyptian Museum.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>327 elegant rooms including 52 luxury suites.</li>
+                        <li>World-class spa, outdoor pool, and 24-hour fitness center.</li>
+                        <li>9 premium restaurants and bars including 'Bab El Sharq'.</li>
+                        <li>Price starts from: <strong>9500 EGP</strong></li>
+                    </ul>
+                    <a href="checkout.html" class="btn">Show details</a>
+                </div>
+            </div>
+
+            <div class="hotel-card" data-stars="4" data-price="1800">
+                <img src="inn.jpg" alt="Cairo Inn">
+                <div class="hotel-details">
+                    <h3>Cairo Inn</h3>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p><strong>Location:</strong> Situated in the heart of Downtown Cairo, close to shopping areas and cafes.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Classic and cozy rooms with high ceilings and traditional decor.</li>
+                        <li>Excellent hospitality and walking distance to the Egyptian Museum.</li>
+                        <li>Free high-speed Wi-Fi and complimentary breakfast.</li>
+                        <li>Price starts from: <strong>1800 EGP</strong></li>
+                    </ul>
+                    <a href="checkout.html" class="btn">Show details</a>
+                </div>
+            </div>
+
+        </div> <aside class="sidebar-filter">
+            <h2 class="filter-title">Filters</h2>
+
+            <div class="filter-box">
+                <label>Search by name:</label>
+                <input type="text" id="searchInput" placeholder="Search hotel..." oninput="filterHotels()">
+            </div>
+
+            <div class="filter-box">
+                <label>Hotel Rating:</label>
+                <select id="starsFilter" onchange="filterHotels()">
+                    <option value="all">All Ratings</option>
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★</option>
+                    <option value="3">★★★</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <label>Price Range:</label>
+                <div class="price-inputs">
+                    <input type="number" id="minPrice" placeholder="Min" oninput="filterHotels()">
+                    <input type="number" id="maxPrice" placeholder="Max" oninput="filterHotels()">
+                </div>
+            </div>
+
+            <button class="clear-btn" onclick="clearFilters()">Reset Filters</button>
+        </aside>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
