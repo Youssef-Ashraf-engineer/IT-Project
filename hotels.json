@@ -8,7 +8,10 @@
     "rating": 4.5,
     "rooms": 120,
     "priceRange": "$50 - $180",
-
+    "gov":"cairo",
+    "start":"2026-05-02",
+    "end":"2026-05-12",
+    "av":22,
     "images": [
         "hotel1/img1.jpg",
         "hotel1/img2.jpg",

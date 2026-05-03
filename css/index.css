@@ -725,3 +725,27 @@ input:checked+.slider:before {
     font-size: 14px;
     opacity: 0.8;
 }
+
+/* ---------------------------------------------------------------------- */
+.hotels-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.hotel-card{
+    border-radius: 30px;
+    transition: 0.2s;
+    padding: 10px;
+
+}
+.hotel-card:hover{
+    border: #1d3557 solid 2px;
+
+}
+.hotel-card img{
+    border-radius: 30px;
+    width: 100%;
+}
+.hotels{
+    padding: 20px;
+}
