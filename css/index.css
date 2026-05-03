@@ -465,9 +465,9 @@ input:checked+.slider:before {
 }
 
 .deals-container {
-    padding: 40px 60px;
     display: flex;
     justify-content: left;
+    margin-bottom: 20px;
 }
 
 .deal-card-placeholder {

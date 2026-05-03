@@ -356,7 +356,7 @@ section{
     padding: 12px;
     border-radius: 12px;
     border: 1px solid #ccc;
-    transition: 0.2s;
+    /* transition: 0.2s; */
     width: 80%;
 }
 #review-title{

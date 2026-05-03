@@ -31,6 +31,10 @@
 input {
     width: 100%;
     box-sizing: border-box;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
 }
 
 /* --- user feedback --- */
@@ -40,7 +44,16 @@ input:focus{
     box-shadow: 0 0 10px rgba(0,123,255,.5);
     transition: .3s;
 }
-
+button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff7a00;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 /* --- when user hover at the button of submit --- */
 button:hover{
     background-color:  #457b94;

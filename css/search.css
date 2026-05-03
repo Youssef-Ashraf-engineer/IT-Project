@@ -114,3 +114,19 @@ input{
 .labelcontainer{
     text-align: center;
 } */
+button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff7a00;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 90%;
+}
+button:hover{
+    background-color:  #457b94;
+    transform: scale(1.1) ;
+    box-shadow: 0 0  10px #ffffff;
+}

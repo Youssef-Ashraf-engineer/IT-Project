@@ -8,7 +8,7 @@ fetch("../hotels.json")
         // card.className="hotels-item"
         card.innerHTML=`
         
-        <a href="hotels/hotel1.html?id=${h.id}">
+        <a href="hotel.html?id=${h.id}">
                     <div class="hotel-card" data-place="${h.gov}" data-start="${h.start}" data-end="${h.end}" data-number="${h.av}">
                         <img src="images/llllllll.jpg" alt="">
                         <div class="cardbody">

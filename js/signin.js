@@ -35,7 +35,7 @@ signInForm.addEventListener('submit', function (event) {
         alert("Welcome back, " + userFound.UserName);
         // Save session if needed
         sessionStorage.setItem("loggedInUser", JSON.stringify(userFound));
-        window.location.href = "home.html"; 
+        window.location.href = "index.html"; 
     } else {
         userNameError.textContent = "Invalid username/email or password";
     }

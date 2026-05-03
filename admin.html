@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px;
+        }
+        .box{
+            background-color: white;
+            padding: 20px;
+            margin: 0 0 15px;
+            border-radius: 10px;
+            box-shadow: 0 5 px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff7a00;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+button:hover{
+    background-color:  #457b94;
+    transform: scale(1.01) ;
+    box-shadow: 0 0  10px #ffffff;
+}
+    </style>
+</head>
+<body>
+    <h2>Admin Dashboard</h2>
+    <div class="box"> Total Hotels;<span id="">2324 Hotel</span></div>
+    <div class="box"> Average Rating:<span id="">4.75⭐</span></div>
+    <div class="box"> Total Reviews:<span id="">8926 Review</span></div>
+    <div class="box"> Cheapest Hotel:<span id="">10$/night</span></div>
+    <div class="box"> Most Expensive Hotel:<span id="">10000$/night</span></div>
+
+    <div class="logout">
+        <button onclick='sessionStorage.setItem("loggedInAdmin", false);location.reload()'>log out</button>
+    </div>
+    <script>
+        if(sessionStorage.getItem("loggedInAdmin")!="true"){
+            document.querySelector("body").innerHTML="you are not admin"
+        }
+    </script>
+</body>
+</html>
