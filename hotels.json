@@ -1,0 +1,96 @@
+{
+  "hotels": [
+    {
+    "id": 1,
+    "name": "Grand Nile Hotel",
+    "description": "Luxury hotel with Nile view and modern rooms.",
+    "location": "Cairo, Egypt",
+    "rating": 4.5,
+    "rooms": 120,
+    "priceRange": "$50 - $180",
+
+    "images": [
+        "hotel1/img1.jpg",
+        "hotel1/img2.jpg",
+        "hotel1/img3.jpg",
+        "hotel1/img4.jpg",
+        "hotel1/img5.jpg"
+    ],
+    "why":[
+        "bla",
+        "bla",
+        "bla",
+        "bla",
+        "bla",
+        "bla"
+    ],
+    "contact": "+201000000000",
+    "website": "https://grandnile.com",
+    "ratingOverview":"but you description here",
+    "locationOverview":"but you description here",
+    "roomsOverview":"but you description here",
+    "price":"but you description here",
+    "check":"but you description here",
+    "features":"but you description here",
+    "faq": [
+            {
+                "title": "Booking & Reservations",
+                "content": "Guests can book online or at reception. Free cancellation within 24 hours."
+                },
+            {
+            "title": "Meals & Dining",
+            "content": "Breakfast buffet included. Rooftop restaurant available."
+        }
+],
+
+"reviews": [
+    {
+    "name": "Ahmed",
+    "rating": 5,
+    "comment": "Amazing hotel! Clean and perfect location."
+    },
+    {
+    "name": "Sara",
+    "rating": 4.5,
+    "comment": "Great service and friendly staff."
+    }
+],
+
+"roomsData": [
+  {
+    "type": "Single Room",
+    "guests": 1,
+    "services": "WiFi, TV, AC",
+    "price": 50
+  },
+  {
+    "type": "Double Room",
+    "guests": 2,
+    "services": "WiFi, TV, Balcony",
+    "price": 90
+  }
+]
+    },
+
+    {
+      "id": 2,
+      "name": "Luxor Palace",
+      "description": "Historic hotel near ancient temples.",
+      "location": "Luxor, Egypt",
+      "rating": 4.3,
+      "rooms": 80,
+      "priceRange": "$40 - $120",
+
+      "images": [
+        "hotel2/img1.jpg",
+        "hotel2/img2.jpg",
+        "hotel2/img3.jpg",
+        "hotel2/img4.jpg",
+        "hotel2/img5.jpg"
+      ],
+
+      "contact": "+201111111111",
+      "website": "https://luxorpalace.com"
+    }
+  ]
+}
