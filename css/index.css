@@ -108,11 +108,6 @@ footer {
     opacity: 0.6;
 }
 
-.footer-bottom p:hover {
-    opacity: 1;
-    cursor: default;
-}
-
 .main-logo-link,
 .main-logo-link:visited,
 .main-logo-link:active {
@@ -376,56 +371,66 @@ input:checked+.slider:before {
     background-color: #f9f9f9;
 }
 
-.night-vision {
-    background-color: #000000 !important;
-    color: #00ff00 !important;
+.night-vision footer {
+    background-color: #1F2A44 !important;
+    color: #C9A14A !important;
+    border-color: #C9A14A!important;
 }
 
-.night-vision footer,
-.night-vision .main-header,
-.night-vision .task-banner,
-.night-vision .deal-card-placeholder,
-.night-vision .empty-card,
-.night-vision .hotel-card-item,
-.night-vision .dest-card {
-    background-color: #000 !important;
-    color: #00ff00 !important;
-    border-color: #00ff00 !important;
+.night-vision .main-logo {
+    color: #e0e0e0 !important;
 }
 
-.night-vision h1,
-.night-vision h2,
-.night-vision h3,
-.night-vision p,
-.night-vision span,
-.night-vision a,
+.night-vision.main-logo:hover {
+    color: #C9A14A;
+    opacity: 0.8 !important;
+}
+
+.night-vision .empty-card {
+    color: white !important;
+}
+
+.night-vision h2 {
+    color: #C9A14A !important;
+}
+
+.night-vision p {
+    color: white !important;
+}
+
 .night-vision .label {
-    color: #00ff00 !important;
+    color: #C9A14A !important;
 }
 
-.night-vision .premium-banner {
-    background: #000 !important;
-    border: 2px solid #00ff00;
-}
-
-.night-vision .premium-btn,
-.night-vision .arrow-btn,
 .night-vision .icon-circle {
     background-color: #fff !important;
-    color: #00ff00 !important;
-    border: 2px solid #00ff00 !important;
+    color: #C9A14A !important;
+    border: 2px solid #C9A14A !important;
 }
 
-.night-vision .night-vision .icon-circle:hover,
+.night-vision .footer-bottom {
+    color: white !important;
+}
+
 .night-vision .footer-col ul li a:hover {
-    background-color: #00ff00 !important;
-    color: #000 !important;
+    color: #C9A14A !important;
     transform: scale(1.1);
 }
 
-.night-vision .btn-icon,
 .night-vision .profile-img {
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg);
+}
+
+.night-vision {
+    background-color: #000000 !important;
+}
+
+.night-vision .hotels-slider-section {
+    background-color: #000000 !important;
+}
+
+.night-vision .destinations-section {
+    background-color: #000000 !important;
 }
 
 
@@ -444,7 +449,7 @@ input:checked+.slider:before {
 }
 
 .hotel-card:hover {
-    border: #1d3557 solid 2px;
+    border: #C9A14A solid 2px;
 }
 
 .hotel-card img {
