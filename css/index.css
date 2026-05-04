@@ -438,8 +438,9 @@ input:checked+.slider:before {
 
 .hotels-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-items: center;
+    gap: 20px;
 }
 
 .hotel-card {
