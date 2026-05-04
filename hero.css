@@ -15,36 +15,28 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 170vh;
 }
 .content{
+    font-size: 50px;
     text-align: center;
     color:rgb(27, 36, 27);
-    position: relative;
-    top: -230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 #offer{
-    position: relative;
-    bottom: -55vh;
     background-color:chartreuse;
-    
 }
-.content{
-    font-size: 60px;
-    margin-bottom: 300px;
-}
-.content .go{
+.go{
     font-size: 20px;
     padding: 10px 20px;
     background-color: rgb(10, 44, 42);
     border-radius: 5px;
     color: aliceblue;
     text-decoration: none;
-    transition: 0.5s ease;
-    
-    
+    transition: 0.5s ease;  
 }
-.content .go:hover{
+.go:hover{
     background-color:blue;
-
 }
