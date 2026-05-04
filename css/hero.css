@@ -19,13 +19,15 @@
 }
 
 .content {
-    font-size: 50px;
+    /* font-size: 50px; */
     text-align: center;
     color: rgb(27, 36, 27);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    /* gap: 50px; */
+    row-gap: 50px;
+    width: 100%;
 }
 
 #offer {
@@ -44,4 +46,12 @@
 
 .go:hover {
     background-color: blue;
+}
+form{
+    width: 100%;
+    font-size: unset !important;
+}
+h1,
+h4{
+    font-size: 50px;
 }

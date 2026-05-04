@@ -12,11 +12,11 @@ fetch("hotels.json")
                     <div class="hotel-card" data-place="${h.gov}" data-start="${h.start}" data-end="${h.end}" data-number="${h.av}">
                         <img src="images/llllllll.jpg" alt="">
                         <div class="cardbody">
-                            <h3 id="hotelName">${h.name}</h3>
-                            <p id="location">📍${h.location}</p>
-                            <p id="rating">${h.rating}</p>
-                            <p id="description">${h.description}</p>
-                            <h5 id="price">⭐${h.rating}$/night</h5>
+                            <h3 class="hotelName">${h.name}</h3>
+                            <p class="location">📍${h.location}</p>
+                            <p class="description">${h.description}</p>
+                            <h5 class="price">⭐${h.rating}$/night</h5>
+                            <h5 class="price">${h.price} EGP/night</h5>
                             <button>view</button>
                         </div>
                     </div>  

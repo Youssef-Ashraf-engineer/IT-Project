@@ -5,11 +5,13 @@ function search(){
   }
   let hotels = document.querySelectorAll(".hotel-card")
   let placevalue = document.querySelector("#place").value;
+  console.log(placevalue)
   let numbervalue = document.querySelector("#number-input").value;
   const checkin = new Date(document.querySelector("#checkininput").value);
   const checkout = new Date(document.querySelector("#checkoutinput").value);
   hotels.forEach(hotel => {
     let place = hotel.dataset.place;
+    console.log(place)
     let number = hotel.dataset.number;
     const start= new Date(hotel.dataset.start);
     const end= new Date(hotel.dataset.end);

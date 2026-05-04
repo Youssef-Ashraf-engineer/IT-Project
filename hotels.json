@@ -1,96 +1,292 @@
 {
-
-    "hotels": [{
-            "id": 1,
-            "name": "Grand Nile Hotel",
-            "description": "Luxury hotel with Nile view and modern rooms.",
-            "location": "Cairo, Egypt",
-            "rating": 4.5,
-            "rooms": 120,
-            "priceRange": "$50 - $180",
-            "gov": "cairo",
-            "start": "2026-05-02",
-            "end": "2026-05-12",
-            "av": 22,
-            "images": [
-                "hotel1/img1.jpg",
-                "hotel1/img2.jpg",
-                "hotel1/img3.jpg",
-                "hotel1/img4.jpg",
-                "hotel1/img5.jpg"
-            ],
-            "why": [
-                "bla",
-                "bla",
-                "bla",
-                "bla",
-                "bla",
-                "bla"
-            ],
-            "contact": "+201000000000",
-            "website": "https://grandnile.com",
-            "ratingOverview": "but you description here",
-            "locationOverview": "but you description here",
-            "roomsOverview": "but you description here",
-            "price": "but you description here",
-            "check": "but you description here",
-            "features": "but you description here",
-            "faq": [{
-                    "title": "Booking & Reservations",
-                    "content": "Guests can book online or at reception. Free cancellation within 24 hours."
-                },
-                {
-                    "title": "Meals & Dining",
-                    "content": "Breakfast buffet included. Rooftop restaurant available."
-                }
-            ],
-
-            "reviews": [{
-                    "name": "Ahmed",
-                    "rating": 5,
-                    "comment": "Amazing hotel! Clean and perfect location."
-                },
-                {
-                    "name": "Sara",
-                    "rating": 4.5,
-                    "comment": "Great service and friendly staff."
-                }
-            ],
-
-            "roomsData": [{
-                    "type": "Single Room",
-                    "guests": 1,
-                    "services": "WiFi, TV, AC",
-                    "price": 50
-                },
-                {
-                    "type": "Double Room",
-                    "guests": 2,
-                    "services": "WiFi, TV, Balcony",
-                    "price": 90
-                }
-            ]
-        },
-
-        {
-            "id": 2,
-            "name": "Luxor Palace",
-            "description": "Historic hotel near ancient temples.",
-            "location": "Luxor, Egypt",
-            "rating": 4.3,
-            "rooms": 80,
-            "priceRange": "$40 - $120",
-
-            "images": [
-                "hotel2/img1.jpg",
-                "hotel2/img2.jpg",
-                "hotel2/img3.jpg",
-                "hotel2/img4.jpg",
-                "hotel2/img5.jpg"
-            ],
-
-            "contact": "+201111111111",
-            "website": "https://luxorpalace.com"
-        }
+"hotels": [
+    {
+    "id": 1,
+    "name": "The Nile Ritz-Carlton",
+    "description": "Located in the heart of Cairo overlooking the Nile, this luxury hotel offers elegant rooms and premium services for business and leisure travelers.",
+    "location": "Downtown Cairo, Egypt",
+    "rating": 5,
+    "rooms": 327,
+    "priceRange": "9500 EGP",
+    "gov": "cairo",
+    "start": "2026-05-02",
+    "end": "2026-05-12",
+    "av": 22,
+    "images": ["hotel1/img1.jpg","hotel1/img2.jpg","hotel1/img3.jpg","hotel1/img4.jpg","hotel1/img5.jpg"],
+    "why": ["Nile view rooms","Luxury spa","Fine dining","Central location","High security","24/7 service"],
+    "contact": "+201002345678",
+    "website": "https://www.ritzcarlton.com/cairo",
+    "ratingOverview": "Highly rated for luxury, cleanliness, and service quality.",
+    "locationOverview": "In downtown Cairo near Tahrir Square and the Nile.",
+    "roomsOverview": "Wide range of rooms including suites and deluxe rooms.",
+    "price": "9500 EGP",
+    "check": "Check-in 2PM, Check-out 12PM.",
+    "features": "WiFi, Pool, Spa, Gym, Restaurant",
+    "faq": [
+        {"title":"Booking","content":"Online booking available with flexible cancellation."},
+        {"title":"Dining","content":"Buffet breakfast and multiple restaurants available."}
+    ],
+    "reviews": [
+        {"name":"Ahmed Hassan","rating":5,"comment":"Luxury at its best."},
+        {"name":"Sara Ali","rating":5,"comment":"Amazing Nile view."}
+    ],
+    "roomsData": [
+        {"type":"Single Room","guests":1,"services":"WiFi, AC, TV","price":50},
+        {"type":"Double Room","guests":2,"services":"WiFi, Balcony","price":90},
+        {"type":"Suite","guests":4,"services":"Nile View, Jacuzzi","price":180}
     ]
+    },
+
+    {
+    "id": 2,
+    "name": "Cairo Inn",
+    "description": "Affordable hotel in central Cairo offering comfortable rooms and basic services.",
+    "location": "Downtown Cairo, Egypt",
+    "rating": 4.5,
+    "rooms": 120,
+    "priceRange": "1800 EGP",
+    "gov": "cairo",
+    "start": "2026-05-02",
+    "end": "2026-05-12",
+    "av": 22,
+    "images": ["hotel1/img1.jpg","hotel1/img2.jpg","hotel1/img3.jpg","hotel1/img4.jpg","hotel1/img5.jpg"],
+    "why": ["Budget friendly","Central location","Clean rooms","Friendly staff","Easy transport","Free WiFi"],
+    "contact": "+201011112233",
+    "website": "https://cairoinn.com",
+    "ratingOverview": "Good value for money and location.",
+    "locationOverview": "Close to public transport and attractions.",
+    "roomsOverview": "Simple and clean rooms.",
+    "price": "1800 EGP",
+    "check": "Check-in 1PM, Check-out 11AM.",
+    "features": "WiFi, Reception, Cleaning",
+    "faq": [
+        {"title":"Booking","content":"Book online or at reception."},
+        {"title":"Services","content":"Basic services available."}
+    ],
+    "reviews": [
+        {"name":"Mostafa","rating":5,"comment":"Very good for the price."},
+        {"name":"John","rating":4.5,"comment":"Nice and clean."}
+    ],
+    "roomsData": [
+        {"type":"Single","guests":1,"services":"WiFi","price":40},
+        {"type":"Double","guests":2,"services":"WiFi, AC","price":80}
+    ]
+    },
+
+    {
+    "id": 3,
+    "name": "Marriott Mena House, Giza",
+    "description": "Historic luxury hotel with direct views of the pyramids.",
+    "location": "Giza, Egypt",
+    "rating": 4.5,
+    "rooms": 331,
+    "priceRange": "4500 EGP",
+    "gov": "giza",
+    "start": "2026-05-02",
+    "end": "2026-05-12",
+    "av": 22,
+    "images": ["hotel1/img1.jpg","hotel1/img2.jpg","hotel1/img3.jpg","hotel1/img4.jpg","hotel1/img5.jpg"],
+    "why": ["Pyramids view","Historic hotel","Luxury rooms","Gardens","Fine dining","Quiet location"],
+    "contact": "+201022334455",
+    "website": "https://marriott.com",
+    "ratingOverview": "Famous for its unique location near pyramids.",
+    "locationOverview": "Directly facing the Giza pyramids.",
+    "roomsOverview": "Elegant rooms with classic design.",
+    "price": "4500 EGP",
+    "check": "2PM / 12PM",
+    "features": "Pool, Garden, WiFi",
+    "faq": [
+        {"title":"Booking","content":"Advance booking recommended."},
+        {"title":"Tours","content":"Tours available."}
+    ],
+    "reviews": [
+        {"name":"Ali","rating":5,"comment":"Best view ever."},
+        {"name":"Emma","rating":4.5,"comment":"Beautiful place."}
+    ],
+    "roomsData": [
+        {"type":"Single","guests":1,"services":"WiFi","price":60},
+        {"type":"Double","guests":2,"services":"Balcony","price":110}
+    ]
+    },
+
+    {
+    "id": 4,
+    "name": "Steigenberger Pyramids Cairo",
+    "description": "Modern hotel with pyramid views and premium comfort.",
+    "location": "Giza, Egypt",
+    "rating": 4.5,
+    "rooms": 132,
+    "priceRange": "$50 - $180",
+    "gov": "giza",
+    "start": "2026-05-02",
+    "end": "2026-05-12",
+    "av": 22,
+    "images": ["hotel1/img1.jpg","hotel1/img2.jpg","hotel1/img3.jpg","hotel1/img4.jpg","hotel1/img5.jpg"],
+    "why": ["Modern design","Pyramid view","Pool","Restaurant","Comfort rooms","Good service"],
+    "contact": "+201033445566",
+    "website": "https://steigenberger.com",
+    "ratingOverview": "Popular for modern design.",
+    "locationOverview": "Near pyramids area.",
+    "roomsOverview": "Modern rooms.",
+    "price": "$50-$180",
+    "check": "2PM / 12PM",
+    "features": "Pool, WiFi",
+    "faq": [
+        {"title":"Booking","content":"Online available."},
+        {"title":"Food","content":"Restaurant available."}
+    ],
+    "reviews": [
+        {"name":"Omar","rating":4.5,"comment":"Great stay."},
+        {"name":"Lina","rating":4.5,"comment":"Very comfortable."}
+    ],
+    "roomsData": [
+        {"type":"Single","guests":1,"services":"WiFi","price":50},
+        {"type":"Double","guests":2,"services":"AC","price":90}
+    ]
+    },
+
+    {
+    "id": 5,
+    "name": "Four Seasons Resort Alexandria",
+    "description": "Luxury seaside resort with premium services.",
+    "location": "Alexandria, Egypt",
+    "rating": 5,
+    "rooms": 118,
+    "priceRange": "7500 EGP",
+    "gov": "alex",
+    "start": "2026-05-02",
+    "end": "2026-05-12",
+    "av": 22,
+    "images": ["hotel1/img1.jpg","hotel1/img2.jpg","hotel1/img3.jpg","hotel1/img4.jpg","hotel1/img5.jpg"],
+    "why": ["Sea view","Luxury rooms","Private beach","Spa","Fine dining","High security"],
+    "contact": "+201044556677",
+    "website": "https://fourseasons.com",
+    "ratingOverview": "Top luxury hotel in Alexandria.",
+    "locationOverview": "Directly on Mediterranean Sea.",
+    "roomsOverview": "Luxury suites and rooms.",
+    "price": "7500 EGP",
+    "check": "2PM / 12PM",
+    "features": "Beach, Pool, Spa",
+    "faq": [
+        {"title":"Beach","content":"Private beach available."},
+        {"title":"Spa","content":"Full spa services."}
+    ],
+    "reviews": [
+        {"name":"Mona","rating":5,"comment":"Perfect vacation."},
+        {"name":"David","rating":5,"comment":"Amazing sea view."}
+    ],
+    "roomsData": [
+        {"type":"Single","guests":1,"services":"Sea View","price":80},
+        {"type":"Suite","guests":4,"services":"Luxury","price":200}
+    ]
+    },
+
+    {
+    "id": 6,
+    "name": "Helnan Palestine Hotel",
+    "description": "Classic hotel inside Montaza gardens.",
+    "location": "Alexandria, Egypt",
+    "rating": 4,
+    "rooms": 218,
+    "priceRange": "3200 EGP",
+    "gov": "alex",
+    "start": "2026-05-02",
+    "end": "2026-05-12",
+    "av": 22,
+    "images": ["hotel1/img1.jpg","hotel1/img2.jpg","hotel1/img3.jpg","hotel1/img4.jpg","hotel1/img5.jpg"],
+    "why": ["Garden location","Quiet","Sea view","Affordable","Historic","Spacious rooms"],
+    "contact": "+201055667788",
+    "website": "https://helnan.com",
+    "ratingOverview": "Good mix of nature and comfort.",
+    "locationOverview": "Inside Montaza gardens.",
+    "roomsOverview": "Large rooms.",
+    "price": "3200 EGP",
+    "check": "2PM / 12PM",
+    "features": "Garden, WiFi",
+    "faq": [
+        {"title":"Location","content":"Inside gardens."},
+        {"title":"Rooms","content":"Spacious rooms."}
+    ],
+    "reviews": [
+        {"name":"Hassan","rating":4,"comment":"Nice place."},
+        {"name":"Nora","rating":4,"comment":"Peaceful stay."}
+    ],
+    "roomsData": [
+        {"type":"Single","guests":1,"services":"WiFi","price":45},
+        {"type":"Double","guests":2,"services":"AC","price":85}
+    ]
+    },
+
+    {
+    "id": 7,
+    "name": "Sofitel Legend Old Cataract",
+    "description": "Historic luxury hotel overlooking the Nile in Aswan.",
+    "location": "Aswan, Egypt",
+    "rating": 4.5,
+    "rooms": 138,
+    "priceRange": "12000 EGP",
+    "gov": "aswan",
+    "start": "2026-05-02",
+    "end": "2026-05-12",
+    "av": 22,
+    "images": ["hotel1/img1.jpg","hotel1/img2.jpg","hotel1/img3.jpg","hotel1/img4.jpg","hotel1/img5.jpg"],
+    "why": ["Historic building","Nile view","Luxury","Spa","Fine dining","Quiet"],
+    "contact": "+201066778899",
+    "website": "https://sofitel.com",
+    "ratingOverview": "Iconic hotel in Aswan.",
+    "locationOverview": "Overlooking Nile.",
+    "roomsOverview": "Elegant rooms.",
+    "price": "12000 EGP",
+    "check": "2PM / 12PM",
+    "features": "Spa, Pool",
+    "faq": [
+        {"title":"History","content":"Historic hotel."},
+        {"title":"View","content":"Nile view."}
+    ],
+    "reviews": [
+        {"name":"Ali","rating":5,"comment":"Luxury experience."},
+        {"name":"Julia","rating":4.5,"comment":"Beautiful place."}
+    ],
+    "roomsData": [
+        {"type":"Single","guests":1,"services":"View","price":100},
+        {"type":"Suite","guests":4,"services":"Luxury","price":250}
+    ]
+    },
+
+    {
+    "id": 8,
+    "name": "Mövenpick Resort Aswan",
+    "description": "Resort located on Elephantine Island offering peaceful stay.",
+    "location": "Aswan, Egypt",
+    "rating": 4.5,
+    "rooms": 230,
+    "priceRange": "4500 EGP",
+    "gov": "aswan",
+    "start": "2026-05-02",
+    "end": "2026-05-12",
+    "av": 22,
+    "images": ["hotel1/img1.jpg","hotel1/img2.jpg","hotel1/img3.jpg","hotel1/img4.jpg","hotel1/img5.jpg"],
+    "why": ["Island location","Nile view","Resort vibe","Pool","Quiet","Nature"],
+    "contact": "+201077889900",
+    "website": "https://movenpick.com",
+    "ratingOverview": "Great for relaxation.",
+    "locationOverview": "On island in Nile.",
+    "roomsOverview": "Comfortable resort rooms.",
+    "price": "4500 EGP",
+    "check": "2PM / 12PM",
+    "features": "Pool, Garden",
+    "faq": [
+        {"title":"Location","content":"Island resort."},
+        {"title":"Relax","content":"Quiet environment."}
+    ],
+    "reviews": [
+        {"name":"Karim","rating":4.5,"comment":"Very relaxing."},
+        {"name":"Anna","rating":4.5,"comment":"Nice resort."}
+    ],
+    "roomsData": [
+        {"type":"Single","guests":1,"services":"WiFi","price":60},
+        {"type":"Double","guests":2,"services":"Balcony","price":100}
+    ]
+    }
+]
 }
