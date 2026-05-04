@@ -46,6 +46,7 @@
   </head>
 <body>
     <div class="formcontainer">
+        <h2 style="text-align: center;">your total checkout is <span id="price"></span></h2>
         <form action="">
             <label for="name">name</label>
             <input id="name" type="text" placeholder="name" name="name" required>
@@ -61,6 +62,8 @@
     </div>
     <script>
         let checkoutform=document.querySelector(".formcontainer")
+        document.querySelector("#price").innerText=new URLSearchParams(window.location.search).get("price")
+
         checkoutform.addEventListener('submit',function(event){event.preventDefault();check()})
 
         function check(){

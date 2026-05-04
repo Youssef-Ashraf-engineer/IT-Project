@@ -175,7 +175,7 @@
     <div class="tab" id="rooms">
     <h2>Rooms Comparison & Booking</h2>
 
-    <form action="checkout.html" class="rooms-form">
+    <form action="checkout.html" method="get" class="rooms-form">
 
         <table class="rooms-table">
             <caption>Choose the best room for your stay</caption>
@@ -260,7 +260,7 @@
                 <tr>
                     <td colspan="6">Grand Total</td>
                     <td id="grandTotal">$0</td>
-                    <input type="text" style="display: none;" id="priceinput">
+                    <input name="price" type="text" style="display: none;" id="priceinput">
                 </tr>
             </tfoot>
         </table>

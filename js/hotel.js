@@ -32,7 +32,7 @@ rows.forEach(row => {
 
         if(radio.checked){
             grandTotal.textContent = "$" + total;
-            priceinput.textContent=total
+            priceinput.value=total
         }
     }
 
