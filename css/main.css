@@ -1,11 +1,27 @@
+/* --- the variables --- */
+:root {
+    --main-bg :#457b9d;
+    --form-bg: rgba(0 ,0 , 0,0.2);
+    --text-color :#ffffff;
+    --border-color:white;
+}
+
+body.light-theme{
+    --main-bg :#f1faee;
+    --form-bg: rgba(255,255 ,255,0.8);
+    --text-color :#5f99ea;
+    --border-color:#9bb6c7;
+}
+
 
 /* --- the body of register --- */
 #bodyyy {
-  background-color: #457b9d;
+  background-color: var(--main-bg);
 }
 
 /* --- the head of page --- */
 #head {
+    color:var(--text-color);
     text-align: center;
     margin-top :100px ;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -13,16 +29,16 @@
 
 /* --- the form of page --- */
 #register {
-    color:#ffffff;
+    color:var(--text-color);
     width: 90%;
     max-width: 400px;
     text-align: center;
     font-size:large;
-    border: 3px solid white;
+    border: 3px solid var(--border-color);
     padding: 20px;
     margin :50px auto ;
     border-radius: 20px;
-    background-color: rgba(0,0,0,.2) ;
+    background-color: var(--form-bg) ;
     backdrop-filter: blur(4px);
     box-shadow: 0px 0px 50px black ;   
     display: flex;
@@ -35,6 +51,18 @@ input {
     border-radius: 12px;
     border: 1px solid #ccc;
     transition: 0.2s;
+}
+
+button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #2b2c56;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+
 }
 
 /* --- user feedback --- */
