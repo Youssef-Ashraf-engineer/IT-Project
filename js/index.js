@@ -12,8 +12,8 @@ function scrollSlider(direction) {
         behavior: 'smooth'
     });
 }document.addEventListener('DOMContentLoaded', () => {
-    const toggle = document.getElementById('mode-checkbox');
-    if (toggle) {
+    const toggle = document.getElementById('mode- checkbox');
+    if (toggle.value) {
         toggle.onclick = () => {
             document.body.classList.toggle('night-vision');
         };

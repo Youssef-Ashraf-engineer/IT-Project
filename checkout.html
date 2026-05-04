@@ -1,10 +1,84 @@
-<!-- Bindawa task start navbar -->
-    this is Bindawa task navbar
-<!-- Bindawa task end navbar -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Info.</title>
+    <style>
+        body{
+  background-color: #f5f5f5;
+  font-family: Arial;
+}
+        .formcontainer{
+            padding: 50px;
+            }
+            form{
+                
+                border-radius: 10px;
+            background-color: white;
+            padding: 50px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 300px;
+        margin: auto;
+        }
+        input{
+            padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+        }
+        button{
+            background-color: black;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+    color: white;
+    cursor: pointer;
+        }
+        textarea{
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+    </style>
+  </head>
+<body>
+    <div class="formcontainer">
+        <form action="">
+            <label for="name">name</label>
+            <input id="name" type="text" placeholder="name" name="name" required>
+            <label for="title">card number</label>
+            <input id="number" type="number" placeholder="card number" name="number" required>
+            <label for="date">End-date</label>
+            <input id="date" type="month" placeholder="end date" name="date" required>
+            <label for="cvv">cvv</label>
+            <input id="cvv" type="cvv" placeholder="(cvv) 3 numbers in the back of the card" name="cvv" required>
+            <div id="err"></div>
+            <button type="submit">send</button>
+        </form>
+    </div>
+    <script>
+        let checkoutform=document.querySelector(".formcontainer")
+        checkoutform.addEventListener('submit',function(event){event.preventDefault();check()})
 
+        function check(){
 
-<!-- y.mohamed task start checkout -->
-    this is y.mohamed task checkout
+            let name = document.querySelector("#name").value
+            let number = document.querySelector("#number").value
+            let date = document.querySelector("#date").value
+        let cvv = document.querySelector("#cvv").value
+        let err=""
+        if(name.length<2) {err+="name is unvalid \n"}
+        if(number.length!=16){err+="card number is unvalid\n"}
+        if(!date){err+="unvalid date\n"}
+        if(name.length!=3){err+="cvv is unvalid\n"}
+        document.getElementById("err").innerText=err
+    }
+    </script>
+</body>
+</html>
 <!-- y.mohamed task end checkout -->
 
 

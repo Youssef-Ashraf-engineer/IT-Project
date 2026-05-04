@@ -18,7 +18,7 @@ items.forEach(item => {
 
 const rows = document.querySelectorAll(".rooms-table tbody tr");
 const grandTotal = document.getElementById("grandTotal");
-
+const priceinput=document.getElementById("priceinput")
 rows.forEach(row => {
     const radio = row.querySelector("input");
     const nightsSelect = row.querySelector(".nights");
@@ -32,6 +32,7 @@ rows.forEach(row => {
 
         if(radio.checked){
             grandTotal.textContent = "$" + total;
+            priceinput.textContent=total
         }
     }
 
