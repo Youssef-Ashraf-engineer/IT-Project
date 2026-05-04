@@ -10,7 +10,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 150vh;
+    min-height: 100vh;
     font-family: 'Arial', sans-serif;
     /*بص هنا لازم احط بادي علشان يبقي في فوتر و عمل فونت و الشكل منها دا عام ملوش دعوة باللي اغيره خالص لما ابدا في الهوم */
     background-size: 0px;
@@ -455,15 +455,6 @@ input:checked+.slider:before {
     transform: translateX(27px);
 }
 
-.task-banner {
-    text-align: center;
-    padding: 20px;
-    background: #f9f9f9;
-    font-weight: bold;
-    color: #555;
-    border-bottom: 1px dashed #ccc;
-}
-
 .deals-container {
     padding: 40px 60px;
     display: flex;
@@ -724,56 +715,58 @@ input:checked+.slider:before {
 .dest-overlay span {
     font-size: 14px;
     opacity: 0.8;
-} .night-vision {
-        background-color: #000000 !important;
-        color: #00ff00 !important;
-    }
-    
-    .night-vision footer,
-    .night-vision .main-header,
-    .night-vision .task-banner,
-    .night-vision .deal-card-placeholder,
-    .night-vision .empty-card,
-    .night-vision .hotel-card-item,
-    .night-vision .dest-card {
-        background-color: #000 !important;
-        color: #00ff00 !important;
-        border-color: #00ff00 !important;
-    }
-    
-    .night-vision h1,
-    .night-vision h2,
-    .night-vision h3,
-    .night-vision p,
-    .night-vision span,
-    .night-vision a,
-    .night-vision .label {
-        color: #00ff00 !important;
-    }
-    
-    .night-vision .premium-banner {
-        background: #000 !important;
-        border: 2px solid #00ff00;
-    }
-    
-    .night-vision .premium-btn,
-    .night-vision .arrow-btn,
-    .night-vision .icon-circle {
-        background-color: #fff !important;
-        color: #00ff00 !important;
-        border: 2px solid #00ff00 !important;
-    }
-    
-    .night-vision .premium-btn:hover,
-    .night-vision .arrow-btn:hover,
-    .night-vision .icon-circle:hover,
-    .night-vision .footer-col ul li a:hover {
-        background-color: #00ff00 !important;
-        color: #000 !important;
-        transform: scale(1.1);
-    }
-    
-    .night-vision .btn-icon,
-    .night-vision .profile-img {
-        filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg);
-    }
+}
+
+.night-vision {
+    background-color: #000000 !important;
+    color: #00ff00 !important;
+}
+
+.night-vision footer,
+.night-vision .main-header,
+.night-vision .task-banner,
+.night-vision .deal-card-placeholder,
+.night-vision .empty-card,
+.night-vision .hotel-card-item,
+.night-vision .dest-card {
+    background-color: #000 !important;
+    color: #00ff00 !important;
+    border-color: #00ff00 !important;
+}
+
+.night-vision h1,
+.night-vision h2,
+.night-vision h3,
+.night-vision p,
+.night-vision span,
+.night-vision a,
+.night-vision .label {
+    color: #00ff00 !important;
+}
+
+.night-vision .premium-banner {
+    background: #000 !important;
+    border: 2px solid #00ff00;
+}
+
+.night-vision .premium-btn,
+.night-vision .arrow-btn,
+.night-vision .icon-circle {
+    background-color: #fff !important;
+    color: #00ff00 !important;
+    border: 2px solid #00ff00 !important;
+}
+
+.night-vision .premium-btn:hover,
+.night-vision .arrow-btn:hover,
+.night-vision .icon-circle:hover,
+.night-vision .footer-col ul li a:hover {
+    background-color: #00ff00 !important;
+    color: #000 !important;
+    transform: scale(1.1);
+}
+
+.night-vision .btn-icon,
+.night-vision .profile-img {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg);
+}
