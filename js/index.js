@@ -11,7 +11,8 @@ function scrollSlider(direction) {
         left: direction * scrollAmount,
         behavior: 'smooth'
     });
-}document.addEventListener('DOMContentLoaded', () => {
+}
+document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('mode-checkbox');
     if (toggle) {
         toggle.onclick = () => {
