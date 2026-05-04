@@ -1,7 +1,7 @@
 footer {
     margin-top: auto;
-    background-color: #457B9D;
-    color: var(--c2);
+    background-color: var(--c4);
+    color: var(--c5);
     padding: 20px 0;
     text-align: left;
     margin-bottom: 0 !important;
