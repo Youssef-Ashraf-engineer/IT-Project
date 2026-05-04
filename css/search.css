@@ -1,3 +1,4 @@
+@import "root.css";
 .search-box{
     position: relative;
     width: 100%;
@@ -43,7 +44,7 @@ input{
     text-align: center;
     font-weight: bold;
     text-transform: capitalize;
-    background-color: white;
+    background-color: var(--c1);
     transition: 0.2s;
     text-align: left;
 }

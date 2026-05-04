@@ -1,4 +1,6 @@
 /* --- the variables --- */
+@import "root.css";
+
 :root {
     --main-bg :#a8dadc;
     --form-bg: rgba(0 ,0 , 0,0.2);
@@ -14,7 +16,7 @@ body.light-theme{
 }
 
 body {
-    background-color: var(--main-bg);
+    background-color: var(--c1);
 }
 
 h3 {

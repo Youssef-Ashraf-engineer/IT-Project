@@ -107,6 +107,8 @@ button {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
+    width: unset;
+    margin-top: unset;
   
 }
 button:hover {

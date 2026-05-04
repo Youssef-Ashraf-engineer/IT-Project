@@ -1,3 +1,5 @@
+@import "root.css";
+
 body {
     margin: 0;
     display: flex;
@@ -10,7 +12,7 @@ body {
 footer {
     margin-top: auto;
     background-color: #457B9D;
-    color: #FFFFFF;
+    color: var(--c2);
     padding: 20px 0;
     text-align: left;
     margin-bottom: 0 !important;

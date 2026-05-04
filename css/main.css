@@ -1,4 +1,6 @@
 /* --- the variables --- */
+@import "root.css";
+
 :root {
     --main-bg :#457b9d;
     --form-bg: rgba(0 ,0 , 0,0.2);

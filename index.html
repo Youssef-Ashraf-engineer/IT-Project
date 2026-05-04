@@ -6,43 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>name</title>
     <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/root.css"> -->
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="navbar.css">
     <!-- <link rel="stylesheet" href="../css/layout.css"> -->
 </head>
 <!--section header logo/profile/night mode-->
-<header class="main-header">
+<!-- <header class="main-header"> -->
     <!--div in div in div -->
-    <div class="header-container">
-
-        <!--logo-->
-        <div class="logo-section">
-            <a href="index.html" style="text-decoration: none; color: inherit;">
-                <h1 class="logo-text">Index logo</h1>
-
-            </a>
-        </div>
-        <!--this header action bottons-->
-        <div class=" header-actions">
-
-            <!--profile section-->
-            <a href="profile.html" class="profile-link">
-                <div class="profile-circle">
-                    <img src="images/icons/account.png" alt="Account" class="profile-img">
-                </div>
-            </a>
-
-            <!--theme tagging night/light-->
-            <div class="theme-toggle">
-                <label class="theme-switch">
-                    <input type="checkbox" id="mode-checkbox"><!--I make it checkbox like right or not switch it right ->light/left->not-->
-                    <div class="slider"></div>
-                </label>
-            </div>
-
-        </div>
+     <nav class="header">
+    <div class="navleft">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav class="nav-links" id="navMenu">
+        <div class="nav-section-title">Navigation</div>
+        <a href="">Rate</a>
+        <a href="">contact us</a>
+      </nav>                                                                                                                                   '
+      <h1><span>name</span></h1>
     </div>
-</header>
+
+
+
+    <div class="navright">
+      
+      <i class="bi bi-brightness-high-fill" id="toggoldark"></i>
+   
+      <div class="user">
+        
+        <a href=""><i class="fa-solid fa-user"></i></a>
+            <button><a href="">sign in</a></button>
+    <button><a href="">sign up</a></button>
+    <button><a href="">sign up</a></button>
+    <button><a href="">sign up</a></button>
+      </div>
+
+    </div>
+    </nav>
+
+<!-- </header> -->
 
 <!--task section deleted by leader -->
 <div class="task-banner">
@@ -236,6 +238,10 @@
     <script src="js/index.js"></script>
     <script src="js/search.js"></script>
     <script src="js/indexload.js"></script>
+    <script>
+
+</script>
+<script src="js/color_check.js"></script>
 </body>
 
 </html>
