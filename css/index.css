@@ -209,7 +209,7 @@ footer {
 
 .hotels-slider-section {
     padding: 40px 50px;
-    background-color: #fff;
+    background-color: var(--c1);
 }
 
 .slider-header {
@@ -230,7 +230,7 @@ footer {
 .hotel-card-item {
     min-width: 320px;
     height: 400px;
-    background: #fff;
+    background: var(--c4);
     border: 1px solid #eee;
     border-radius: 15px;
     transition: 0.4s ease;
@@ -280,7 +280,7 @@ footer {
 
 .destinations-section {
     padding: 60px 50px;
-    background-color: #f9f9f9;
+    background-color: var(--c1);
 }
 
 .night-vision footer {
