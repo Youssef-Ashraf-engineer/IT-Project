@@ -25,7 +25,8 @@ if (loggedInUser) {
     photo.src = loggedInUser.Photo || "account.png";
 }
 if (!loggedInUser) {
-    window.location.href = "signin.html";
+    alert("Please log in to access your profile.");
+    window.location.href = "login.html";
 }
 
 /* This part handles the image upload functionality  by clicking the custom button instead of the default file input which has a bad UI */
@@ -89,6 +90,7 @@ saveBtn.addEventListener("click", () => {
 /*log out*/
 logOutBtn.addEventListener("click", () => {
     sessionStorage.removeItem("loggedInUser");
+    showAlert("Logged out successfully!");
     window.location.href = "index.html";
 });
 
@@ -104,3 +106,18 @@ deleteBtn.addEventListener("click", () => {
     showAlert("Account deleted");
     setTimeout(() => window.location.href = "index.html", 1500);
 });
+
+
+
+function showAlert(message) {
+    const alertBox = document.createElement("div");
+    alertBox.className = "custom-alert";
+    alertBox.innerText = message;
+
+    document.body.appendChild(alertBox);
+
+    setTimeout(() => {
+        alertBox.classList.add("hide");
+        setTimeout(() => alertBox.remove(), 300);
+    }, 1500);
+}
