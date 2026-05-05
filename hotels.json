@@ -111,12 +111,12 @@
 
     {
     "id": 4,
-    "name": "Steigenberger Pyramids Cairo",
+    "name": "Steigenberger Pyramids",
     "description": "Modern hotel with pyramid views and premium comfort.",
     "location": "Giza, Egypt",
     "rating": 4.5,
     "rooms": 132,
-    "priceRange": "$50 - $180",
+    "priceRange": "2800",
     "gov": "giza",
     "start": "2026-05-02",
     "end": "2026-05-12",
@@ -128,7 +128,7 @@
     "ratingOverview": "Popular for modern design.",
     "locationOverview": "Near pyramids area.",
     "roomsOverview": "Modern rooms.",
-    "price": "$50-$180",
+    "price": "2800",
     "check": "2PM / 12PM",
     "features": "Pool, WiFi",
     "faq": [
