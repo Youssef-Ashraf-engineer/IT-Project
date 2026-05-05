@@ -30,7 +30,18 @@ toggle.addEventListener('click',function() {
 })
 
 
-document.addEventListener("load",color_check())
+window.addEventListener("load",function ()  {
+    if(localStorage.getItem("theme")=="dark"){
+    console.log(localStorage.getItem("theme"))
+    document.getElementById('toggoldark').classList.toggle('bi-moon')
+document.getElementById('toggoldark').classList.toggle('bi-brightness-high-fill')
+            body.style.background='black'
+        body.style.color='white'
+        body.style.transition='0s'
+
+    }
+    color_check()
+})
 function color_check(){
 console.log(localStorage.getItem("theme"))
     if(localStorage.getItem("theme")=="light"){

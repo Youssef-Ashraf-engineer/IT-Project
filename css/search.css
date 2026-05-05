@@ -66,7 +66,8 @@ input{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background: white;
+    background: var(--c4);
+    color: white;
     border-radius: 10px;
     align-items: center;
     flex-wrap: wrap;
@@ -103,7 +104,7 @@ input{
 }
 
 #searchBtn{
-    background-color: #457B9D;
+    background-color: #ff7a00;
     padding: 12px;
     border-radius: 10px;
     cursor: pointer;
