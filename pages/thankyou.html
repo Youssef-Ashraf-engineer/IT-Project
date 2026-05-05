@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
     <title>Document</title>
     <style>
         body {
         font-family: Arial;
         background: #f5f5f5;
         text-align: center;
-        padding: 50px;
+        /* padding: 50px; */
         }
 
         .box {
@@ -41,10 +42,44 @@
     </style>
 </head>
 <body>
-    <audio src="thankyou.mp3" autoplay></audio>
+    <nav class="header">
+        <div class="navleft">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav class="nav-links" id="navMenu">
+                <div class="nav-section-title">Navigation</div>
+                <a href="">Hotels</a>
+                <a href="">Sign In</a>
+                <a href="">Register</a>
+                <a href="">Giza</a>
+                <a href="">Cairo</a>
+                <a href="">Alex</a>
+                <a href="">Aswan</a>
+                <a href="">contact us</a>
+            </nav>
+            <h1><span><i><a href="../index.html">vector villa</a></i></span></h1>
+        </div>
+    
+    
+    
+        <div class="navright">
+    
+            <i class="bi bi-brightness-high-fill" id="toggoldark"></i>
+    
+            <div class="user">
+    
+                <a href="profile.html"><i class="fa-user"></i></a>
+                <button><a href="login.html">sign in</a></button>
+                <button><a href="register.html">sign up</a></button>
+                <button><a href="">hotels</a></button>
+                <button><a href="">contact</a></button>
+            </div>
+    
+        </div>
+    </nav>
+    <audio src="../assets/thankyou.mp3" autoplay></audio>
     <div class="box">
         <h2>Thank You</h2>
-        <img src="images/thankyou.jpg" alt="">
+        <img src="../images/thankyou.jpg" alt="">
         <p id="name">name</p>
         <p id="email">email</p>
         <p id="rating">rating</p>
@@ -63,5 +98,6 @@
         document.getElementById("pros").textContent="pros:"+parms.get("pros")
         document.getElementById("cons").textContent="cons:"+parms.get("cons")
 </script>
+<script src="../js/color_check.js"></script>
 </body>
 </html>

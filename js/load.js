@@ -6,14 +6,14 @@ if (!hotelId){
   
   hotelId=1
 }
-fetch("../hotels.json").then(res => res.json()).then(data =>{
+fetch("../js/hotels.json").then(res => res.json()).then(data =>{
     const hotel = data.hotels.find(h=>h.id == hotelId)
     loadHotel(hotel)
 })
 function loadHotel(hotel){
     console.log(hotel)
-    document.querySelector(".header h1").textContent =hotel.name
-    document.querySelector(".header p").textContent =hotel.description
+    document.querySelector(".heder-text h1").textContent =hotel.name
+    document.querySelector(".heder-text p").textContent =hotel.description
     document.querySelector(".info .box:nth-child(1) p").textContent =hotel.location
     document.querySelector(".info .box:nth-child(2) p").textContent =hotel.contact
     document.querySelector(".info .box:nth-child(3) a").href =hotel.website

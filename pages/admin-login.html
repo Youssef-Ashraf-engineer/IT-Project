@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet"  href="../css/signin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <title>Sign IN page</title>
+</head>
+<body>
+    <nav class="header">
+        <div class="navleft">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav class="nav-links" id="navMenu">
+                <div class="nav-section-title">Navigation</div>
+                <a href="login.html">Sign In</a>
+                <a href="register.html">Register</a>
+                <a href="../govs/Giza.html">Giza</a>
+                <a href="../govs/cairo.html">Cairo</a>
+                <a href="../govs/Alex.html">Alex</a>
+                <a href="../govs/Aswan.html">Aswan</a>
+                <a href="contact.html">contact us</a>
+            </nav>
+            <h1><span><i><a href="../index.html">vector villa</a></i></span></h1>
+        </div>
+    
+    
+    
+        <div class="navright">
+    
+            <i class="bi bi-brightness-high-fill" id="toggoldark"></i>
+    
+            <div class="user">
+    
+                <a href="profile.html"><i class="fa-user"></i></a>
+                <button><a href="login.html">sign in</a></button>
+                <button><a href="register.html">sign up</a></button>
+                <button><a href="">hotels</a></button>
+                <button><a href="">contact</a></button>
+            </div>
+    
+        </div>
+    </nav>
+    <h3 class="lol">Admin Sign In</h3>
+    <h4 style="text-align: center;">welcome admin</h4>
+    <form  method="get" id="signin" >
+        <div>
+            <label for="username" class="lol">Admin User Name or Email</label><br>
+            <input type="text"  id="username" name="username" placeholder="write your name or email"><br>
+            <span id="userNameError" class="error"></span>
+        </div>
+        <div>
+            <Label for="password" class="lol" >Password</Label><br>
+            <input type="password" name="password" id="password" placeholder="write your password"><br><br>
+            <span id="passwordError" class="error"></span>
+        </div>
+        <div><button id="submit">Sing in</button></div>
+    </form>
+    
+</body>
+<script src="../js/adminsignin.js" ></script>
+<script src="../js/color_check.js"></script>
+</html>

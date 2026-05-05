@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    color: var(--c8);
 }
 
 body {
@@ -11,7 +12,7 @@ body {
 h1{
     text-align: center;
 }
-.header{
+header.header{
     /* min-height: 60vh; */
     display: flex;
     flex-direction: column;
@@ -25,25 +26,25 @@ h1{
     color: white;
     text-align: center;
 }
-.header img{
+header.header img{
     width: 100%;
 }
-.heder-text{
+header.heder-text{
     position: absolute;
 }
-.header h1{
+header.header h1{
     font-size: 50px;
     margin: 0;
     letter-spacing: 2px;
 }
 
-.header p{
+header.header p{
     font-size: 20px;
     max-width: 600px;
     margin-top: 10px;
     opacity: 0.9;
 }
-.header .btn{
+header.header .btn{
     margin-top: 20px;
     padding: 12px 25px;
     background: #457B9D;
@@ -53,7 +54,7 @@ h1{
     transition: 0.3s;
 }
 
-.header .btn:hover{
+header.header .btn:hover{
     transform: scale(1.1);
 }
 .info{
@@ -63,7 +64,7 @@ h1{
 }
 
 .box{
-    background: white;
+    background: var(--c2);
     padding: 25px;
     border-radius: 12px;
     text-align: left;
@@ -230,7 +231,7 @@ span{
 }
 
 .features-container div{
-    background: #fff;
+    background: var(--c1);
     padding: 15px 25px;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -250,7 +251,7 @@ span{
 }
 
 .review{
-    background: white;
+    background: var(--c1);
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
@@ -274,6 +275,10 @@ span{
     text-align: center;
 }
 
+.rooms-table td select{
+    background-color: var(--c1);
+}
+
 .rooms-table thead{
     background: #222;
     color: white;
@@ -281,11 +286,12 @@ span{
 
 .rooms-table tbody tr{
     border-bottom: 1px solid #eee;
+    background-color: var(--c1);
     transition: 0.2s;
 }
 
 .rooms-table tbody tr:hover{
-    background: #f5f5f5;
+    background: var(--c2);
 }
 
 .rooms-table input[type="radio"]{
@@ -328,11 +334,11 @@ section{
 
 
 .faq {
-    background: white;
+    background: var(--c1);
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
-    border: 1px solid #eee;
+    border: 1px solid var(--c1);
 }
 
 .faq h3 {
@@ -360,4 +366,7 @@ section{
     font-weight: bold;
     font-size: 34px;
     text-transform: capitalize;
+}
+tfoot{
+    background-color: var(--c1);
 }

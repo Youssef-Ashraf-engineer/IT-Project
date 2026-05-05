@@ -1,4 +1,4 @@
-fetch("hotels.json")
+fetch("js/hotels.json")
 .then(res => res.json())
 .then(data =>{
     const container = document.getElementById("hotelsContainer")
@@ -8,7 +8,7 @@ fetch("hotels.json")
         // card.className="hotels-item"
         card.innerHTML=`
         
-        <a href="hotel.html?id=${h.id}">
+        <a href="pages/hotel.html?id=${h.id}">
                     <div class="hotel-card" data-place="${h.gov}" data-start="${h.start}" data-end="${h.end}" data-number="${h.price}">
                         <img src="images/gallery/hotel${h.id}/img (1).jpg" alt="">
                         <div class="cardbody">

@@ -4,7 +4,6 @@ const tabs = document.querySelectorAll(".tab");
 items.forEach(item => {
     item.addEventListener("click", () => {
 
-        // remove active
         tabs.forEach(tab => tab.classList.remove("active"));
         items.forEach(item => item.classList.remove("current"));
 

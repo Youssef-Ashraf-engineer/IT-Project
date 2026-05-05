@@ -1,8 +1,8 @@
 function search(){
-  // if(!document.querySelector("#checkininput").value || !document.querySelector("#checkoutinput").value){
-  //   alert("empty check in or check out");
-  //   return;
-  // }
+  if(!document.querySelector("#checkininput").value || !document.querySelector("#checkoutinput").value){
+    alert("empty check in or check out");
+    return;
+  }
   let hotels = document.querySelectorAll(".hotel-card")
   let placevalue = document.querySelector("#place").value;
   let numbervalue =parseInt(document.querySelector("#number-input").value);

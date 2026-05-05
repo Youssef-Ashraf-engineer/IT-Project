@@ -129,7 +129,7 @@ function addTaskToArray(username, lastname, email, password, idnumber, numbers, 
     arrayOfTask.push(task);
     window.localStorage.setItem("allUsers",JSON.stringify(arrayOfTask));
     alert("saved sucssesfully");
-    window.location.href = "signin.html"; 
+    window.location.href = "login.html"; 
 
 }
 // make the image text
