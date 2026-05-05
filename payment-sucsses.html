@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            padding: 40px;
+
+        }
+        .box{
+            background-color: white;
+            padding: 20px;
+            margin: 0 0 15px;
+            border-radius: 10px;
+            box-shadow: 0 5 px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #ff7a00;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+button:hover{
+    background-color:  #457b94;
+    transform: scale(1.01) ;
+    box-shadow: 0 0  10px #ffffff;
+}
+.videocontainer{
+    margin: auto;
+    width: 100%;
+    padding: 20px 300px;
+    box-sizing: border-box;
+}
+video{
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <h2>Payment Sucssed</h2>
+    <div class="videocontainer">
+        <video src="payment.mp4" autoplay></video>
+        <audio src="payment.mp3" autoplay></audio>
+    </div>
+    <div class="box">Amount Paid;<span id="amount">2324 Hotel</span></div>
+    <div class="box"> Transaction Id:<span id="transaction">4.75⭐</span></div>
+    <div class="box"> Card Number:**** **** **** **<span id="card">23</span></div>
+    <div class="box"> Transaction Time:<span id="time"></span></div>
+    <!-- <div class="box"> Email:<span id="">email</span></div> -->
+
+    
+    <script>
+        document.querySelector("#amount").innerText=new URLSearchParams(window.location.search).get("amount")
+        document.querySelector("#transaction").innerText=Math.floor(Math.random() * 10000000000);
+        document.querySelector("#card").innerText=new URLSearchParams(window.location.search).get("number").slice(-2)
+        document.querySelector("#time").innerText=new Date().toString();
+        document.querySelector("#email").innerText=new URLSearchParams(window.location.search).get("email")
+
+    </script>
+</body>
+</html>

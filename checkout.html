@@ -47,11 +47,12 @@
 <body>
     <div class="formcontainer">
         <h2 style="text-align: center;">your total checkout is <span id="price"></span></h2>
-        <form action="">
+        <form action="payment-sucsses.html">
             <label for="name">name</label>
             <input id="name" type="text" placeholder="name" name="name" required>
+            <input id="hidden" name="amount" type="text" style="display: none;">
             <label for="title">card number</label>
-            <input id="number" type="number" placeholder="card number" name="number" required>
+            <input id="number" type="text" placeholder="card number" name="number" required>
             <label for="date">End-date</label>
             <input id="date" type="month" placeholder="end date" name="date" required>
             <label for="cvv">cvv</label>
@@ -64,7 +65,7 @@
         let checkoutform=document.querySelector(".formcontainer")
         document.querySelector("#price").innerText=new URLSearchParams(window.location.search).get("price")
 
-        checkoutform.addEventListener('submit',function(event){event.preventDefault();check()})
+        checkoutform.addEventListener('submit',function(event){check()})
 
         function check(){
 
@@ -73,11 +74,17 @@
             let date = document.querySelector("#date").value
         let cvv = document.querySelector("#cvv").value
         let err=""
+        document.querySelector("#hidden").value=new URLSearchParams(window.location.search).get("price")
         if(name.length<2) {err+="name is unvalid \n"}
         if(number.length!=16){err+="card number is unvalid\n"}
         if(!date){err+="unvalid date\n"}
         if(cvv.length!=3){err+="cvv is unvalid\n"}
         document.getElementById("err").innerText=err
+        if(!err){
+            
+            checkoutform.removeEventListener('submit', arguments.callee)
+            checkoutform.submit()
+        }
     }
     </script>
 </body>

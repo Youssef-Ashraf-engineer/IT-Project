@@ -15,7 +15,7 @@ fetch("hotels.json")
                             <h3 class="hotelName">${h.name}</h3>
                             <p class="location">📍${h.location}</p>
                             <p class="description">${h.description}</p>
-                            <h5 class="price">⭐${h.rating}$/night</h5>
+                            <h5 class="price">⭐${h.rating}</h5>
                             <h5 class="price">${h.price} EGP/night</h5>
                             <button>view</button>
                         </div>

@@ -159,7 +159,7 @@ span a{
 }
 .bi-brightness-high-fill::before{
     content: " ";
-    background-image: url("sun.png");
+    background-image: url("images/icons/sun.png");
     width: 32px;
     height: 32px;    
     display: inline-block;
@@ -168,7 +168,7 @@ span a{
 }
 .bi-moon::before{
         content: " ";
-    background-image: url("moon.png");
+    background-image: url("images/icons/moon.png");
     width: 32px;
     height: 32px;    
     display: inline-block;
@@ -177,7 +177,7 @@ span a{
 }
 .fa-user::before{
     content: " ";
-    background-image: url("user.png");
+    background-image: url("images/icons/user.png");
     width: 32px;
     height: 32px;    
     display: inline-block;
