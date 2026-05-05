@@ -21,7 +21,7 @@ function loadHotel(hotel){
     document.querySelector("#rating-overview").textContent =hotel.ratingOverview
     document.querySelector("#location-overview").textContent =hotel.locationOverview
     document.querySelector("#rooms-overview").textContent =hotel.roomsOverview
-    document.querySelector("#price-overview").textContent =hotel.price
+    document.querySelector("#price-overview").textContent ="starts from "+hotel.price+" EGP"
     document.querySelector("#check-in-overview").textContent =hotel.check
     document.querySelector("#features-overview").textContent =hotel.features
 const faqContainer = document.querySelector("#faq");
@@ -70,10 +70,11 @@ hotel.why.forEach(f => {
 
     const images = document.querySelectorAll(".images img")
     images.forEach((img,index)=>{
+      // index++
         if(hotel.images[index]){
-            img.src ="../images/gallery/hotel"+hotel.id+"/img"+index+".jpg"
+            img.src ="../images/gallery/hotel"+hotel.id+"/img ("+index+").jpg"
         }
     }
-    
-    )
+  )
+  document.querySelector("#hedear-img").src="../images/gallery/hotel"+hotel.id+"/img (0).jpg"
 }

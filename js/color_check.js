@@ -53,6 +53,10 @@ console.log(localStorage.getItem("theme"))
         document.documentElement.style.setProperty('--c6', 'red');
         document.documentElement.style.setProperty('--c7', 'red');
         document.documentElement.style.setProperty('--c8', 'red');
+        document.documentElement.style.setProperty('--m1', '#FFFFFF');
+        document.documentElement.style.setProperty('--m2', 'red');
+        document.documentElement.style.setProperty('--m3', 'red');
+        document.documentElement.style.setProperty('--m4', 'red');
     }
     else if(localStorage.getItem("theme")=="dark"){
         document.documentElement.style.setProperty('--c1', '#121212');
@@ -63,6 +67,10 @@ console.log(localStorage.getItem("theme"))
         document.documentElement.style.setProperty('--c6', 'black');
         document.documentElement.style.setProperty('--c7', 'black');
         document.documentElement.style.setProperty('--c8', 'black');
+        document.documentElement.style.setProperty('--m1', '#1e1e1ea8');
+        document.documentElement.style.setProperty('--m2', 'red');
+        document.documentElement.style.setProperty('--m3', 'red');
+        document.documentElement.style.setProperty('--m4', 'red');
 }
 else{
     console.log("bla")

@@ -228,7 +228,7 @@ footer {
 }
 
 .hotel-card-item {
-    min-width: 320px;
+    min-width: 300px;
     height: 400px;
     background: var(--c4);
     border: 1px solid #eee;
@@ -332,20 +332,28 @@ footer {
 
 /* ---------------------------------------------------------------------- */
 
-.hotels-grid {
+.destination-grid{
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-items: center;
+    gap: 20px;
+
+}
+.hotels-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     justify-items: center;
     gap: 20px;
 }
 
 .hotel-card {
     border-radius: 30px;
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
     padding: 10px;
     height: 400px;
     display: flex;
     flex-direction: column;
+    background-color: var(--m1);
 }
 
 .hotel-card:hover {
@@ -356,6 +364,8 @@ footer {
     border-radius: 30px;
     width: 100%;
     margin-bottom: 10px;
+    aspect-ratio: 3/2;
+    /* height: 290px; */
 }
 
 .hotels {
@@ -378,4 +388,9 @@ a {
     color: unset;
 }
 
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 @media(min-width:768px) {}
