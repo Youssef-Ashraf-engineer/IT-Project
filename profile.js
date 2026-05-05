@@ -58,18 +58,59 @@ document.querySelectorAll(".custom-btn").forEach((btn) => {
     }
 });
 
+/*This part handles the photo upload functionality*/
 hiddenPhotoInput.addEventListener("change",e => {
     const file = hiddenPhotoInput.files[0];
     const reader = new FileReader();
 
     reader.addEventListener("load",() =>{
-        localStorage.setItem("recent-image",reader.result);
+        loggedInUser.Photo = reader.result;
+        sessionStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
+
+        const index = allUsers.findIndex(user => user.Email === loggedInUser.Email);
+        if (index !== -1) {
+            allUsers[index] = loggedInUser;
+            localStorage.setItem("allUsers", JSON.stringify(allUsers));
+        }
+
+        photo.src = reader.result;
     });
     reader.readAsDataURL(file);
 });
 
+/*Validation when user clicks Edit*/
+function validateInput(input) {
+    const errorMsg = input.parentElement.querySelector(".error-msg");
+
+    if (!input.checkValidity()) {
+        errorMsg.textContent = "Please enter valid data";
+        return false;
+    }
+
+    if (input === password && input.value.length < 6) {
+        errorMsg.textContent = "Password must be at least 6 characters";
+        return false;
+    }
+
+    errorMsg.textContent = "";
+    return true;
+}
+
+document.querySelectorAll("input").forEach(i => {
+    i.addEventListener("input", () => validateInput(i));
+});
+
 /*Save changes to the profile and update localStorage and sessionStorage*/
 saveBtn.addEventListener("click", () => {
+    let valid = true;
+    document.querySelectorAll("input").forEach(i => {
+        if (!validateInput(i)) valid = false;
+    });
+    if (!valid) {
+        showAlert("Please fix the errors first!");
+        return;
+    }
+
     loggedInUser.FirstName = firstName.value;
     loggedInUser.LastName = lastName.value;
     loggedInUser.Email = email.value;

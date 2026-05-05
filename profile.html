@@ -27,25 +27,29 @@
                     <div class="form-row">
                         <div class="name-section">
                             <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" readonly>
+                            <input type="text" id="firstName" required readonly>
+                            <small class="error-msg"></small>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                         <div class="name-section">
                             <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" readonly>
+                            <input type="text" id="lastName" required readonly>
+                            <small class="error-msg"></small>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="pass-section">
                             <label for="password">Password</label>
-                            <input type="password" id="password" readonly>
+                            <input type="password" id="password" required readonly>
+                            <small class="error-msg"></small>
                             <button type="button" class="custom-btn">Edit</button>
                             <button type="button" class="custom-btn">Show</button>
                         </div>
                         <div class="mail-section">
                             <label for="email">Email</label>
-                            <input type="email" id="email" readonly>
+                            <input type="email" id="email" required readonly>
+                            <small class="error-msg"></small>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                     </div>
@@ -53,11 +57,13 @@
                         <div class="ID-section">
                             <label for="idNumber">National ID</label>
                             <input type="text" id="idNumber" readonly>
+                            <small class="error-msg"></small>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                         <div class="date-section">
                             <label for="birth">Date of Birth</label>
                             <input type="date" id="birth" readonly>
+                            <small class="error-msg"></small>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                     </div>
