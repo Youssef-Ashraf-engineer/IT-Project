@@ -10,43 +10,42 @@
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="navbar.css">
 </head>
-<nav class="header">
-    <div class="navleft">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <nav class="nav-links" id="navMenu">
-            <div class="nav-section-title">Navigation</div>
-            <a href="">Rate</a>
-            <a href="">contact us</a>
-        </nav>
-        <h1><span><i><a href="index.html">vector villa</a></i></span></h1>
-    </div>
-
-
-
-    <div class="navright">
-
-        <i class="bi bi-brightness-high-fill" id="toggoldark"></i>
-
-        <div class="user">
-
-            <a href="profile.html"><i class="fa-user"></i></a>
-            <button><a href="login.html">sign in</a></button>
-            <button><a href="register.html">sign up</a></button>
-            <button><a href="">sign up</a></button>
-            <button><a href="">sign up</a></button>
-        </div>
-
-    </div>
-</nav>
 
 
 
 
 <body>
+    <nav class="header">
+        <div class="navleft">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav class="nav-links" id="navMenu">
+                <div class="nav-section-title">Navigation</div>
+                <a href="">Rate</a>
+                <a href="">contact us</a>
+            </nav>
+            <h1><span><i><a href="index.html">vector villa</a></i></span></h1>
+        </div>
+    
+    
+    
+        <div class="navright">
+    
+            <i class="bi bi-brightness-high-fill" id="toggoldark"></i>
+    
+            <div class="user">
+    
+                <a href="profile.html"><i class="fa-user"></i></a>
+                <button><a href="login.html">sign in</a></button>
+                <button><a href="register.html">sign up</a></button>
+                <button><a href="">sign up</a></button>
+                <button><a href="">sign up</a></button>
+            </div>
+    
+        </div>
+    </nav>
     <!--here is the hero section make not my task just css you can make it like you want YA-->
     <section class="deals-container">
         <div class="hero">
-
             <div class="content">
                 <h1>" Vector Villa "</h1>
                 <form action="">
@@ -57,6 +56,7 @@
                                 <input type="text" id="searchInput">
                                 <input type="text" id="place" value="all">
                                 <div class="dropdown" id="dropdown">
+                                    <div class="all">all</div>
                                     <div class="giza">giza</div>
                                     <div class="cairo">cairo</div>
                                     <div class="alex">alex</div>
@@ -77,11 +77,10 @@
                             </div>
                         </div>
                         <div class="labelcontainer">
-                            <label for="">Rooms</label>
+                            <label for="">Price</label>
                             <div class="number-box">
-                                <input id="number-input" type="number" placeholder="number of rooms.">
+                                <input id="number-input" type="number" placeholder="Your pudget.">
                             </div>
-                            <!-- <button type="button" value="search" onclick="search()">search</button> -->
                         </div>
                         <div onclick="search()" id="searchBtn">
 
@@ -108,8 +107,8 @@
     <h2 style="text-align: center;margin-top: 5px;">Hotels Search</h2>
     <div class="hotels">
         <div class="hotels-grid" id="hotelsContainer">
-            <a href="hotel.html?id=1">
-                <div class="hotel-card" data-place="giza" data-start="2026-05-02" data-end="2026-05-12"
+            <a class="hotel-card" href="hotel.html?id=1">
+                <div  data-place="giza" data-start="2026-05-02" data-end="2026-05-12"
                     data-number="28">
                     <img src="images/llllllll.jpg" alt="">
                     <div class="cardbody">
