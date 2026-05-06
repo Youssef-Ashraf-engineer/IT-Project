@@ -4,6 +4,7 @@
 <head>
 
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,39 @@
 </head>
 
 <body id="bodyyy" class="light-theme">
+    <nav class="header">
+        <div class="navleft">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav class="nav-links" id="navMenu">
+                <div class="nav-section-title">Navigation</div>
+                <a href="login.html">Sign In</a>
+                <a href="register.html">Register</a>
+                <a href="../govs/Giza.html">Giza</a>
+                <a href="../govs/cairo.html">Cairo</a>
+                <a href="../govs/Alex.html">Alex</a>
+                <a href="../govs/Aswan.html">Aswan</a>
+                <a href="contact.html">contact us</a>
+            </nav>
+            <h1><span><i><a href="../index.html">vector villa</a></i></span></h1>
+        </div>
+    
+    
+    
+        <div class="navright">
+    
+            <i class="bi bi-brightness-high-fill" id="toggoldark"></i>
+    
+            <div class="user">
+    
+                <a href="profile.html"><i class="fa-user"></i></a>
+                <button><a href="login.html">sign in</a></button>
+                <button><a href="register.html">sign up</a></button>
+                <button><a href="">hotels</a></button>
+                <button><a href="">contact</a></button>
+            </div>
+    
+        </div>
+    </nav>
     <h2 id="head">Create Your Account</h2>
     <form action="#" id="register">
         <div>
@@ -95,12 +129,12 @@
                     <div class="social-item">
                         <a href="https://github.com/Youssef-Ashraf-engineer/IT-Project" target="_blank" class="icon-circle">
                             <i class="fab fa-github"></i>
-                            <img src="images/icons/github.png" alt="GitHub" height="45px" /> </a>
+                            <img src="../images/icons/github.png" alt="GitHub" height="45px" /> </a>
                         <span>GitHub</span>
                     </div>
                     <div class="social-item">
                         <a href="https://www.linkedin.com/in/youssef-nasser-8a09203a9" target="_blank" class="icon-circle">
-                            <i class="fab fa-linkedin"></i> <img src="images/icons/linkedin.png" alt="LinkedIn" height="45px" />
+                            <i class="fab fa-linkedin"></i> <img src="../images/icons/linkedin.png" alt="LinkedIn" height="45px" />
                         </a> <span>LinkedIn</span>
     
                     </div>
@@ -116,9 +150,11 @@
         </div>
     </footer>
 
+    <!-- <script src="../js/index.js"></script> -->
+    <!-- <script src="../js/search.js"></script> -->
+    <!-- <script src="../js/indexload.js"></script> -->
+    <!-- <script src="../js/color_check.js"></script> -->
     <script src="../js/register.js"></script>
-    <script src="../js/index.js"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/indexload.js"></script>
+
 </body>
 </html>

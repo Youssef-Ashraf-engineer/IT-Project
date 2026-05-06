@@ -1,10 +1,14 @@
 :root{
-    --c1: black;
-    --c2: black;
-    --c3: black;
-    --c4: black;
-    --c5: black;
-    --c6: black;
-    --c7: black;
-    --c8: black;
+    --c1: ffffff;
+    --c2: a8dadc;
+    --c3: f1faee;
+    --c4: 457b9d;
+    --c5: ffE066;
+    --c6: red;
+    --c7: red;
+    --c8: 121212;
+    --m1: #ffffff;
+    --m2: red;
+    --m3: red;
+    --m4: red;
 }

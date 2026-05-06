@@ -41,8 +41,16 @@ window.addEventListener("load",function ()  {
         body.style.color='white'
         body.style.transition='0s'
         // document.querySelector(".hero").style.backgroundImage="url('../images/hero_image_d.jpg')"
-
+        
     }
+    else{
+        // document.getElementById('toggoldark').classList.toggle('bi-moon')
+        // document.getElementById('toggoldark').classList.toggle('bi-brightness-high-fill')
+        body.style.background='white'
+        body.style.color='black'
+        body.style.transition='0.3s'
+    }
+
     color_check()
 })
 function color_check(){

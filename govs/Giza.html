@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giza Hotels</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <nav class="header">
+        <div class="navleft">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav class="nav-links" id="navMenu">
+                <div class="nav-section-title">Navigation</div>
+                <a href="../pages/login.html">Sign In</a>
+                <a href="../pages/register.html">Register</a>
+                <a href="Giza.html">Giza</a>
+                <a href="cairo.html">Cairo</a>
+                <a href="Alex.html">Alex</a>
+                <a href="Aswan.html">Aswan</a>
+                <a href="../pages/contact.html">contact us</a>
+            </nav>
+            <h1><span><i><a href="../index.html">vector villa</a></i></span></h1>
+        </div>
+    
+    
+    
+        <div class="navright">
+    
+            <i class="bi bi-brightness-high-fill" id="toggoldark"></i>
+    
+            <div class="user">
+    
+                <a href="../pages/profile.html"><i class="fa-user"></i></a>
+                <button><a href="../pages/login.html">sign in</a></button>
+                <button><a href="../pages/register.html">sign up</a></button>
+                <button><a href="../pages/contact.html">contact</a></button>
+            </div>
+    
+        </div>
+    </nav>
 <section class="hotels-section">
     <h2 class="title">Hotels in Giza</h2>
 
@@ -80,7 +113,65 @@
 
     </div>
 </section>
+<footer>
 
+        <div class="footer-container">
+            <a href="index.html" class="main-logo-link">
+                <h1 class="main-logo">vector villa</h1>
+            </a>
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <span class="label">ACCOUNT :</span>
+                    <ul>
+                        <li><a href="pages/login.html">Login</a></li>
+                        <li><a href="pages/register.html">Register</a></li>
+                        <li><a href="pages/profile.html">Profile</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <span class="label">SERVICES :</span>
+                    
+                        <li>
+                            <a href="pages/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-brand-section">
+                <!--this section contains the the text title"bold",subtitle"italic"-->
+                <h2 class="brand-title">Vector Villa</h2>
+                <p class="brand-subtitle">Your trusted platform for booking hotels across Egypt</p>
+                <!--this section contains the social media links-->
+                <div class="brand-socials">
+                    <div class="social-item">
+                        <a href="https://github.com/Youssef-Ashraf-engineer/IT-Project" target="_blank"
+                            class="icon-circle">
+                            <i class="fab fa-github"></i>
+                            <img src="../images/icons/github.png" alt="GitHub" height="45px" /> </a>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="social-item">
+                        <a href="https://www.linkedin.com/in/youssef-nasser-8a09203a9" target="_blank"
+                            class="icon-circle">
+                            <i class="fab fa-linkedin"></i> <img src="../images/icons/linkedin.png" alt="LinkedIn"
+                                height="45px" />
+                        </a> <span>LinkedIn</span>
+
+                    </div>
+                </div>
+
+                <!--this section contains the bottom information of the footer-->
+                <div class="footer-bottom">
+                    <p>© 2026 CHECK IN MANAGEMENT LTD.</p>
+                    <p>WEB DESIGN BY TEAM N.A.E.M.U.MB.MM</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+<script src="../js/color_check.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
