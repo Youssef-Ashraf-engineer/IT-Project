@@ -40,6 +40,14 @@ signInForm.addEventListener('submit', function (event) {
         userNameError.textContent = "Invalid username/email or password";
     }
 });
+window.addEventListener("load",function(){
+    if( JSON.parse(sessionStorage.getItem("loggedInUser"))){
+        alert("alredy signed in")
+        window.location.href = "../index.html"; 
+        return
+        
+    }
+})
 // const themeBtn = document.getElementById('theme-toggle'); 
 // const body = document.body;
 

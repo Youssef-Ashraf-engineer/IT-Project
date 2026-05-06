@@ -87,3 +87,14 @@ else{
     console.log("bla")
 }
 }
+const loggedIn = JSON.parse(sessionStorage.getItem("loggedInUser"));
+document
+if(!loggedIn){
+    document.querySelector(".fa-user").style.display="none"
+    document.querySelector(".profilebtn").style.display="none"
+}
+else{
+document.querySelectorAll(".loginbtn, .regbtn").forEach(el => {
+    el.style.display = "none";
+})
+}
