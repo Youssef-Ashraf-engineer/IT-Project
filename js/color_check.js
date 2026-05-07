@@ -68,6 +68,15 @@ console.log(localStorage.getItem("theme"))
         document.documentElement.style.setProperty('--m2', 'red');
         document.documentElement.style.setProperty('--m3', 'red');
         document.documentElement.style.setProperty('--m4', 'red');
+        document.documentElement.style.setProperty('--y1', '#FFFFFF');
+        document.documentElement.style.setProperty('--y2', '#F1FAEE');
+        document.documentElement.style.setProperty('--y3', '#1d3557');
+        document.documentElement.style.setProperty('--y4', '#A8DADC');
+        document.documentElement.style.setProperty('--y5', '#1d3557');
+        document.documentElement.style.setProperty('--y6', '#457B9D');
+        document.documentElement.style.setProperty('--y7', '#1d3557');
+        document.documentElement.style.setProperty('--y8', '#386480');
+        document.documentElement.style.setProperty('--y9', '#2c4e63');
     }
     else if(localStorage.getItem("theme")=="dark"){
         document.documentElement.style.setProperty('--c1', '#121212');
@@ -82,6 +91,15 @@ console.log(localStorage.getItem("theme"))
         document.documentElement.style.setProperty('--m2', 'red');
         document.documentElement.style.setProperty('--m3', 'red');
         document.documentElement.style.setProperty('--m4', 'red');
+        document.documentElement.style.setProperty('--y1', '#121212');
+        document.documentElement.style.setProperty('--y2', '#cfcfcf');
+        document.documentElement.style.setProperty('--y3', '#C9A14A');
+        document.documentElement.style.setProperty('--y4', '#3A86FF');
+        document.documentElement.style.setProperty('--y5', '#FFFFFF');
+        document.documentElement.style.setProperty('--y6', '#256e9b');
+        document.documentElement.style.setProperty('--y7', '#1F2A44');
+        document.documentElement.style.setProperty('--y8', '#b18e42');
+        document.documentElement.style.setProperty('--y9', '#967838');
 }
 else{
     console.log("bla")

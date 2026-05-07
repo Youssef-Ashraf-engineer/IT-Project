@@ -27,12 +27,12 @@ signInForm.addEventListener('submit', function (event) {
     
     // Search for user by UserName OR Email AND check Password
     const userFound = allUsers.find(user => 
-        (user.UserName === usernameInput || user.Email === usernameInput) && 
+        (user.FirstName === usernameInput || user.Email === usernameInput) && 
         user.Password === passwordInput
     );
 
     if (userFound) {
-        alert("Welcome back, " + userFound.UserName);
+        alert("Welcome back, " + userFound.FirstName + "!");
         // Save session if needed
         sessionStorage.setItem("loggedInUser", JSON.stringify(userFound));
         window.location.href = "../index.html"; 

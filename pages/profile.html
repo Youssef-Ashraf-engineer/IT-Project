@@ -49,55 +49,67 @@
             <form action="" class="model" method="post">
                 <fieldset class="structure">
                     <div class="photo-section">
-                        <img src="../images/account.png" alt="Personal photo" class="photo">
+                        <img src="../images/account.png" alt="Personal photo" class="photo" id="photo">
                         <input type="file" class="hidden-upload">    <!-- Hidden file input -->
                         <button type="button" class="photo-custom-btn" >Update Photo</button>     <!-- Custom button to trigger file input -->
                     </div>
                     <div class="form-row">
                         <div class="name-section">
                             <label for="firstName">First Name</label>
-                            <input type="text" id="firstName" required readonly>
-                            <small class="error-msg"></small>
+                            <div class="input-wrap">
+                                <input type="text" id="firstName" required readonly>
+                                <small class="error-msg"></small>
+                            </div>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                         <div class="name-section">
                             <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName" required readonly>
-                            <small class="error-msg"></small>
+                            <div class="input-wrap">
+                                <input type="text" id="lastName" required readonly>
+                                <small class="error-msg"></small>
+                            </div>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="pass-section">
                             <label for="password">Password</label>
-                            <input type="password" id="password" required readonly>
-                            <small class="error-msg" style="color: red;"></small>
+                            <div class="input-wrap">
+                                <input type="password" id="password" required readonly>
+                                <small class="error-msg" style="color: red;"></small>
+                            </div>
                             <button type="button" class="custom-btn">Edit</button>
                             <button type="button" class="custom-btn">Show</button>
                         </div>
                         <div class="mail-section">
                             <label for="email">Email</label>
-                            <input type="email" id="email" required readonly>
-                            <small class="error-msg" style="color: red;"></small>
+                            <div class="input-wrap">
+                                <input type="email" id="email" required readonly>
+                                <small class="error-msg" style="color: red;"></small>
+                            </div>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="ID-section">
                             <label for="idNumber">National ID</label>
-                            <input type="text" id="idNumber" required readonly>
-                            <small class="error-msg" style="color: red;"></small>
+                            <div class="input-wrap">
+                                <input type="text" id="idNumber" required readonly>
+                                <small class="error-msg" style="color: red;"></small>
+                            </div>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                         <div class="date-section">
                             <label for="birth">Date of Birth</label>
-                            <input type="date" id="birth" readonly>
-                            <small class="error-msg" style="color: red;"></small>
+                            <div class="input-wrap">
+                                <input type="date" id="birth" readonly>
+                                <small class="error-msg" style="color: red;"></small>
+                            </div>
                             <button type="button" class="custom-btn">Edit</button>
                         </div>
                     </div>
                     <div>
-                        <button type="button" class="custom-btn">Save changes</button>
+                        <button type="button" class="custom-btn" id="saveBtn">Save changes</button>
                     </div>
                 </fieldset>
             </form>

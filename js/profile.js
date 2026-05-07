@@ -11,7 +11,7 @@ const photo = document.getElementById("photo");
 const updatePhotoBtn = document.querySelector(".photo-custom-btn");
 const hiddenPhotoInput = document.querySelector(".hidden-upload");
 const editButtons = document.querySelectorAll(".name-section .custom-btn, .mail-section .custom-btn, .pass-section .custom-btn, .ID-section .custom-btn, .date-section .custom-btn");
-const saveBtn = document.querySelector(".structure > div button");
+const saveBtn = document.getElementById("saveBtn");
 const logOutBtn = document.querySelector(".action-btns button:nth-child(1)");
 const deleteBtn = document.querySelector(".action-btns button:nth-child(2)");
 
@@ -26,7 +26,7 @@ if (loggedInUser) {
 }
 if (!loggedInUser) {
     alert("Please log in to access your profile.");
-    window.location.href = "login.html";
+    window.location.href = "../pages/login.html";
 }
 
 /* This part handles the image upload functionality  by clicking the custom button instead of the default file input which has a bad UI */
@@ -37,15 +37,15 @@ updatePhotoBtn.addEventListener("click", () => {
 /*This part handles the edit and show/hide functionality for the input fields*/
 document.querySelectorAll(".custom-btn").forEach((btn) => {
 
-    if (btn.innerText === "Edit") {
+    if (btn.innerText.trim() === "Edit") {
         btn.addEventListener("click", () => {
-            const input = btn.previousElementSibling;
+            const input = btn.closest("div").querySelector("input");
             input.removeAttribute("readonly");
             input.focus();
         });
     }
 
-    if (btn.innerText === "Show") {
+    if (btn.innerText.trim() === "Show") {
         btn.addEventListener("click", () => {
             if (password.type === "password") {
                 password.type = "text";
@@ -82,6 +82,8 @@ hiddenPhotoInput.addEventListener("change",e => {
 function validateInput(input) {
     const errorMsg = input.parentElement.querySelector(".error-msg");
 
+    if (!errorMsg) return true;
+
     if (!input.checkValidity()) {
         errorMsg.textContent = "Please enter valid data";
         return false;
@@ -111,6 +113,8 @@ saveBtn.addEventListener("click", () => {
         return;
     }
 
+    const originalEmail = loggedInUser.Email;
+
     loggedInUser.FirstName = firstName.value;
     loggedInUser.LastName = lastName.value;
     loggedInUser.Email = email.value;
@@ -118,21 +122,23 @@ saveBtn.addEventListener("click", () => {
     loggedInUser.IDNumber = idNumber.value;
     loggedInUser.BirthDate = birth.value;
 
-    sessionStorage.loggedInUser = JSON.stringify(loggedInUser);
+    sessionStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 
-    const userIndex = allUsers.findIndex(user => user.Email === loggedInUser.Email);
+    const userIndex = allUsers.findIndex(user => user.Email === originalEmail);
     if (userIndex !== -1) {
         allUsers[userIndex] = loggedInUser;
         localStorage.setItem("allUsers", JSON.stringify(allUsers));
     }
     showAlert("Profile updated successfully!");
+    setTimeout(() => window.location.reload(), 1500);
 });
 
 /*log out*/
 logOutBtn.addEventListener("click", () => {
     sessionStorage.removeItem("loggedInUser");
     showAlert("Logged out successfully!");
-    window.location.href = "index.html";
+    setTimeout(() => window.location.href = "../index.html", 3000);
+    window.location.href = "../index.html";
 });
 
 /*Delete Account*/
@@ -143,9 +149,10 @@ deleteBtn.addEventListener("click", () => {
 
     localStorage.setItem("allUsers", JSON.stringify(updated));
     sessionStorage.removeItem("loggedInUser");
+    localStorage.removeItem("recent-image");
 
     showAlert("Account deleted");
-    setTimeout(() => window.location.href = "index.html", 1500);
+    setTimeout(() => window.location.href = "../index.html", 3000);
 });
 
 
@@ -160,5 +167,5 @@ function showAlert(message) {
     setTimeout(() => {
         alertBox.classList.add("hide");
         setTimeout(() => alertBox.remove(), 300);
-    }, 1500);
+    }, 3000);
 }

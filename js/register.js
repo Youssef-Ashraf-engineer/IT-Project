@@ -90,6 +90,15 @@ myRegister.addEventListener('submit', function (event) {
         existerror = true ;
     }
 
+
+    // will appear error if user registered with email is already exist
+
+    const emailExists = arrayOfTask.some(user => user.Email === email);
+    if (emailExists) {
+        error3.textContent = "This email is already registered";
+        return;
+    }
+
 // submit task
 if (!existerror){
     
@@ -117,19 +126,19 @@ if (!existerror){
 
 function addTaskToArray(username, lastname, email, password, idnumber, numbers, birth, photo) {
     const task = {
-        UserName: username,
+        FirstName: username,
         LastName: lastname,
         Email: email,
         Password: password,
-        IDNationl: idnumber,
+        IDNumber: idnumber,
         Number1: numbers,
-        Birth: birth,
+        BirthDate: birth,
         Photo: localStorage.getItem("recent-image"),
     };
     arrayOfTask.push(task);
     window.localStorage.setItem("allUsers",JSON.stringify(arrayOfTask));
     alert("saved sucssesfully");
-    window.location.href = "login.html"; 
+    window.location.href = "../pages/login.html"; 
 
 }
 // make the image text
