@@ -9,7 +9,7 @@ body {
     background-color: #f6f8fa;
     color: #222;
 }
-h1{
+h1.center{
     text-align: center;
 }
 header.header{
@@ -43,6 +43,7 @@ header.header p{
     font-size: 20px;
     max-width: 600px;
     margin-top: 10px;
+    margin-bottom: 20px;
     opacity: 0.9;
 }
 header.header .btn{
@@ -161,7 +162,7 @@ a:target{
     z-index: 990;
 
 }
-span{
+span.x{
     color: white;
     background: rgba(0,0,0,0.6);
     display: none;
@@ -335,7 +336,7 @@ section{
 
 
 .faq {
-    background: var(--c1);
+    background: var(--c2);
     padding: 15px;
     border-radius: 10px;
     margin-top: 10px;

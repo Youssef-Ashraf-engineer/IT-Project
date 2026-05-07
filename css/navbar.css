@@ -152,9 +152,10 @@ nav span a{
     text-transform: uppercase;
     margin-left: 50px;
     text-decoration: none;
-    color: var(--c1);
+    color: white;
     font-size: 30px;
     vertical-align: middle;
+    background-color: transparent;
 }
 nav .hidden{
     visibility: none;
