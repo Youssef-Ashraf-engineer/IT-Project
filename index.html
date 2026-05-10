@@ -295,7 +295,7 @@ toggle2.addEventListener("click", function () {
 })
     if(localStorage.getItem("theme")=="dark"){
         document.querySelector(".hero").style.backgroundImage="url('images/hero_image_d.jpg')"
-        
+        this.classList.toggle('bi-brightness-high-fill')
     }
     else{
         document.querySelector(".hero").style.backgroundImage="url('images/hero_image.jpg')"
