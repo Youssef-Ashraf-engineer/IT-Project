@@ -361,8 +361,8 @@ footer {
 }
 .hotels-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 0.25fr));
+    justify-items: center;
     gap: 20px;
     width: 100%;
 }

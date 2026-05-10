@@ -121,7 +121,7 @@ nav button:hover {
 }
 nav .bi{
     padding: 4px 8px;
-    background-color: transparent;
+    background-color: rgb(255, 224, 102);;
     color: white;
     border: none;
     border-radius: 10px;
