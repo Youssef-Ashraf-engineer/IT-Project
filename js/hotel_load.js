@@ -1,9 +1,6 @@
 let hotelId = new URLSearchParams(window.location.search).get("id")
-// const hotelId = 1
 if (!hotelId){
-  console.warn("mising id param default id is choosed");
-  alert("mising id param default id is choosed")
-  
+  alert("mising id param default id is choosed") 
   hotelId=1
 }
 fetch("../js/hotels.json").then(res => res.json()).then(data =>{
@@ -70,7 +67,6 @@ hotel.why.forEach(f => {
 
     const images = document.querySelectorAll(".images img")
     images.forEach((img,index)=>{
-      // index++
         if(hotel.images[index]){
             img.src ="../images/gallery/hotel"+hotel.id+"/img ("+index+").jpg"
         }

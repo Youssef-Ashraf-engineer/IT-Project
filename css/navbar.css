@@ -191,3 +191,8 @@ nav span{
     display: inline;
     background-color: transparent;
 }
+@media (max-width:720px) {
+    nav .navright{
+        display: none !important ;
+    }
+}

@@ -65,7 +65,7 @@ console.log(localStorage.getItem("theme"))
         document.documentElement.style.setProperty('--c7', 'red');
         document.documentElement.style.setProperty('--c8', '#121212');
         document.documentElement.style.setProperty('--m1', '#FFFFFF');
-        document.documentElement.style.setProperty('--m2', 'red');
+        document.documentElement.style.setProperty('--u1', '#759bb1');
         document.documentElement.style.setProperty('--m3', 'red');
         document.documentElement.style.setProperty('--m4', 'red');
         document.documentElement.style.setProperty('--y1', '#FFFFFF');
@@ -88,7 +88,7 @@ console.log(localStorage.getItem("theme"))
         document.documentElement.style.setProperty('--c7', 'black');
         document.documentElement.style.setProperty('--c8', '#ffffff');
         document.documentElement.style.setProperty('--m1', '#1e1e1ea8');
-        document.documentElement.style.setProperty('--m2', 'red');
+        document.documentElement.style.setProperty('--u1', '#e0e0e0');
         document.documentElement.style.setProperty('--m3', 'red');
         document.documentElement.style.setProperty('--m4', 'red');
         document.documentElement.style.setProperty('--y1', '#121212');

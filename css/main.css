@@ -86,12 +86,12 @@ button {
     margin-top: 20px;
     padding: 20px 30px;
     border: none;
-    background: #ff7a00;
+    background: #6081ce;
     color: white;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
-    margin: 15px;
+    margin: 30px;
 }
 
 
