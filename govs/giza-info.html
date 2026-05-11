@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giza Information</title>
+    <style>
+        @import "root.css";
+        body{
+            background-color:white;
+        }
+        .photo{
+            width: 100%;
+        }
+        img{
+            border-radius: 30px;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            align-items: start;
+        }
+        h1{
+            color: var(--c8);
+            font-size: 48px;
+        }
+        p{
+            color: var(--c8);
+            font-size: 18px;
+        }
+        h3{
+            color: var(--c8);
+            font-size: 24px;
+        }
+        button{
+            border-radius: 7px;
+            padding: 6px 12px;
+            background-color: var(--y6);
+            color: var(--c8);
+            border: none;
+        }
+        .map-box{
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        iframe{
+            width: 1000px;
+            height: 500px;
+        }
+        @media (max-width: 600px) {
+            .container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo">
+            <img src="giza-image-map.jpg" alt="Giza" usemap="#giza-map">
+            <map name="giza-map">
+                <area shape="rect" coords="355,216,877,445" href="https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza" alt="Giza Governorate">
+                <area shape="rect" coords="945,105,1318,457" href="https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza" alt="Giza Governorate">
+                <area shape="rect" coords="100,246,1464,613" href="https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza" alt="Giza Governorate">
+            </map>
+        </div>
+
+    
+        <!-- النص -->
+
+        <div class="text-box">
+            <h1>Giza City</h1>
+            <p>
+                Giza is a city in Egypt located on the bank of the Nile River. It is known for its magnificent location and extends along the river. Giza Governorate is a historic Egyptian region located on the west bank of the Nile, globally famous for the Giza Plateau. It hosts the iconic Great Pyramids and the Sphinx, attracting millions of visitors. Beyond its ancient wonders, Giza is a bustling urban hub, serving as a vital center for education, culture, and industry, while connecting Cairo to Upper Egypt.
+            </p>
+            <h3>Don't hesitate to book our hotel</h3>
+            <button onclick="window.location.href='Giza.html';" >
+                Book Now
+            </button>
+        </div>
+        
+        <!-- الخريطة -->
+        <div class="map-box">
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1786648.5183990926!2d30.947809496274132!3d29.00076549499873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145841042f9e1ec1%3A0xfbc569d70f20ac26!2z2YXYrdin2YHYuNipINin2YTYrNmK2LLYqQ!5e0!3m2!1sar!2seg!4v1778511031080!5m2!1sar!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>
