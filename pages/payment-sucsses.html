@@ -10,8 +10,10 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f5f5f5;
-            padding: 40px;
-
+            
+        }
+        body .cont{
+            padding: 300px;
         }
         .box{
             background-color: white;
@@ -85,18 +87,21 @@ video{
     
         </div>
     </nav>
-    <h2>Payment Sucssed</h2>
-    <div class="videocontainer">
-        <video src="../assets/payment.mp4" autoplay></video>
-        <audio src="../assets/payment.mp3" autoplay></audio>
-    </div>
-    <div class="box">Amount Paid;<span id="amount">2324 Hotel</span></div>
-    <div class="box"> Transaction Id:<span id="transaction">4.75⭐</span></div>
-    <div class="box"> Card Number:**** **** **** **<span id="card">23</span></div>
-    <div class="box"> Transaction Time:<span id="time"></span></div>
-    <!-- <div class="box"> Email:<span id="">email</span></div> -->
+    <div class="cont">
 
-    
+        <h2>Payment Sucssed</h2>
+        <div class="videocontainer">
+            <video src="../assets/payment.mp4" autoplay></video>
+            <audio src="../assets/payment.mp3" autoplay></audio>
+        </div>
+        <div class="box">Amount Paid;<span id="amount">2324 Hotel</span></div>
+        <div class="box"> Transaction Id:<span id="transaction">4.75⭐</span></div>
+        <div class="box"> Card Number:**** **** **** **<span id="card">23</span></div>
+        <div class="box"> Transaction Time:<span id="time"></span></div>
+        <!-- <div class="box"> Email:<span id="">email</span></div> -->
+    </div>
+        
+        
     <script>
         document.querySelector("#amount").innerText=new URLSearchParams(window.location.search).get("amount")
         document.querySelector("#transaction").innerText=Math.floor(Math.random() * 10000000000);
@@ -108,7 +113,7 @@ video{
     <footer>
 
         <div class="footer-container">
-            <a href="index.html" class="main-logo-link">
+            <a href="../index.html" class="main-logo-link">
                 <h1 class="main-logo">vector villa</h1>
             </a>
             <div class="footer-columns">

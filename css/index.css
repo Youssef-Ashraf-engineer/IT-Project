@@ -371,7 +371,7 @@ footer {
     border-radius: 30px;
     transition: 0.2s ease-in-out;
     padding: 10px;
-    height: 400px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     background-color: var(--c4);

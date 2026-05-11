@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandria Information</title>
+    <style>
+        body{
+            background-color:honeydew;
+        }
+    
+        .container {
+    display: flex;        
+    gap: 20px;            
+    padding: 20px;
+    align-items: start; 
+}
+
+.text-box {
+    flex: 1;            
+    text-align: right;   
+}
+
+.map-box {
+    flex: 1;              
+}
+
+@media (max-width: 600px) {
+    .container { flex-direction: column; }
+}
+    </style>
+</head>
+<body>
+    
+
+    
+
+<!--  -->
+   
+<div class="container">
+    <!-- بداية الكارت -->
+<div class="card">
+    <!-- الرابط يبدأ هنا ويغلف كل اللي جواه -->
+    <a href="Alex-info.html" target="_blank" style="text-decoration: none; color: inherit;">        
+        <!-- 1. الصورة -->
+        <img src="images/Alex.jpg" alt="Alexandria">
+
+        <!-- 2. محتوى المعلومات والأسعار -->
+        <div class="card-content">
+            <h3>Sofitel Alexandria</h3>
+            <p class="location">Alexandria, Egypt</p>
+
+            <div class="discount-tag">خصم 25% أقل من المواقع الأخرى</div>
+
+            <div class="price-section">
+                <del class="old-price">$260</del>
+                <span class="new-price">$195</span>
+                <small>لكل ليلة</small>
+            </div>
+        </div>
+
+    </a> <!-- قفلة الرابط هنا بعد ما خلصنا كل محتوى الكارت -->
+</div> <!-- قفلة الكارت -->
+    
+</div>
+
+        <!-- النص -->
+
+        <div class="text-box">
+            <h1>مدينة الإسكندرية</h1>
+            <p>
+                
+            </p>
+            <h2>لا تتردد في الحجز بفندقنا</h2>
+                    <button onclick="window.location.href='Alex-info.html';" >
+   الحجز
+    </button>
+        </div>
+        
+        <!-- الخريطة -->
+        <div class="map-box">
+            <iframe width="70%" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d132690.55645469602!2d30.064482595510647!3d31.258858949559496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAlex%20hotels!5e1!3m2!1sar!2seg!4v1778014016968!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        
+
+
+
+</body>
+</html>
