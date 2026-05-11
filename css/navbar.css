@@ -41,6 +41,7 @@ nav .navright div {
     display: flex;
     align-items:center ;
     justify-content: space-between;
+    gap: 10px;
 }
 nav .user i{
     color: white;
@@ -191,8 +192,8 @@ nav span{
     display: inline;
     background-color: transparent;
 }
-@media (max-width:720px) {
-    nav .navright{
+@media (max-width:730px) {
+    nav .navright .user{
         display: none !important ;
     }
 }
