@@ -157,7 +157,7 @@ fileImage.addEventListener("change",e => {
 window.addEventListener("load",function(){
     if( JSON.parse(sessionStorage.getItem("loggedInUser"))){
         alert("alredy signed in")
-        window.location.href = "../index.html"; 
+        // window.location.href = "../index.html"; 
         return
         
     }

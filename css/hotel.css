@@ -35,7 +35,7 @@ header.heder-text{
 }
 header.header h1{
     font-size: 50px;
-    margin: 0;
+    margin-top: 40px;
     letter-spacing: 2px;
 }
 
@@ -120,6 +120,9 @@ header.header .btn:hover{
     padding: 10px 50px ;
     text-align: center;
 }
+.txt{
+    margin-bottom: 40px;
+}
 .images{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -143,6 +146,7 @@ max-width: 90%;
 height: unset;
     max-height: 90%;
     border-radius: 10px;
+    margin-top: 30px;
 }
 a:target img:hover{
     transform: unset;
@@ -160,24 +164,27 @@ a:target{
     justify-content: center;
     align-items: center;
     z-index: 990;
+    
 
 }
-span.x{
+.x span{
     color: white;
-    background: rgba(0,0,0,0.6);
     display: none;
     font-size: 50px;
     border-radius: 50%;
     width: 1em;
     height: 1em;
     text-align: center;
+    font-size: 50px;
+    vertical-align: middle;
+    color: RED;
 }
 .images:has(:target) span{
     display: flex;
     position: fixed;
     top: 10%;
     z-index: 991;
-    right: 10%;
+    right: 7%;
     justify-content: center;
     align-items: center;
 }

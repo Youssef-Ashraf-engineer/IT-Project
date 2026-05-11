@@ -17,14 +17,14 @@ toggle.addEventListener('click',function() {
     if(this.classList.toggle('bi-brightness-high-fill')) {
         body.style.background='white'
         body.style.color='black'
-        body.style.transition='0.3s'
+        body.style.transition='0.8s'
         localStorage.setItem("theme", "light")
         // document.querySelector(".hero").style.backgroundImage="url('../images/hero_image.jpg')"
         color_check()
     } else{
         body.style.background='black'
         body.style.color='white'
-        body.style.transition='0.3s'
+        body.style.transition='0.8s'
         localStorage.setItem("theme", "dark")
         // document.querySelector(".hero").style.backgroundImage="url('../images/hero_image_d.jpg')"
         color_check()
@@ -39,7 +39,7 @@ window.addEventListener("load",function ()  {
         document.getElementById('toggoldark').classList.toggle('bi-brightness-high-fill')
         body.style.background='black'
         body.style.color='white'
-        body.style.transition='0s'
+        body.style.transition='0.8s'
         // document.querySelector(".hero").style.backgroundImage="url('../images/hero_image_d.jpg')"
         
     }
@@ -48,7 +48,7 @@ window.addEventListener("load",function ()  {
         // document.getElementById('toggoldark').classList.toggle('bi-brightness-high-fill')
         body.style.background='white'
         body.style.color='black'
-        body.style.transition='0.3s'
+        body.style.transition='0.8s'
     }
 
     color_check()

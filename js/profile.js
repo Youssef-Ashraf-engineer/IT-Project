@@ -26,7 +26,7 @@ if (loggedInUser) {
 }
 if (!loggedInUser) {
     alert("Please log in to access your profile.");
-    window.location.href = "../pages/login.html";
+    //window.location.href = "../pages/login.html";
 }
 
 /* This part handles the image upload functionality  by clicking the custom button instead of the default file input which has a bad UI */
