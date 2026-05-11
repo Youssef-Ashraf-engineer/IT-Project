@@ -379,3 +379,8 @@ section{
 tfoot{
     background-color: var(--c1);
 }
+
+textarea,input,select{
+    background-color: var(--y2);
+    color: black;
+}
