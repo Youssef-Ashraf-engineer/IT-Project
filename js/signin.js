@@ -44,25 +44,7 @@ window.addEventListener("load",function(){
     if( JSON.parse(sessionStorage.getItem("loggedInUser"))){
         alert("alredy signed in")
         // window.location.href = "../index.html"; 
-        return
+        // return
         
     }
 })
-// const themeBtn = document.getElementById('theme-toggle'); 
-// const body = document.body;
-
-// const currentTheme = localStorage.getItem('theme');
-
-// if (currentTheme === 'light') {
-//     body.classList.add('light-theme');
-// }
-
-// themeBtn.addEventListener('click', () => {
-   
-//     body.classList.toggle('light-theme');
-//     if (body.classList.contains('light-theme')) {
-//         localStorage.setItem('theme', 'light');
-//     } else {
-//         localStorage.setItem('theme', 'dark');
-//     }
-// })

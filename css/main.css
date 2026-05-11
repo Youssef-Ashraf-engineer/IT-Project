@@ -61,17 +61,6 @@ input {
     transition: 0.2s;
 }
 
-button {
-    margin-top: 20px;
-    padding: 20px 30px;
-    border: none;
-    background: #2b2c56;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
 
 /* --- user feedback --- */
 
