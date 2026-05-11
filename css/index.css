@@ -249,7 +249,6 @@ a{
     border: 1px solid #eee;
     border-radius: 15px;
     transition: 0.4s ease;
-    cursor: pointer;
     padding: 20px;
     box-sizing: border-box;
 }
