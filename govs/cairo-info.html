@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cairo Information</title>
+    <style>
+        body{
+            background-color:honeydew;
+        }
+    
+        .container {
+    display: flex;        
+    gap: 20px;            
+    padding: 20px;
+    align-items: start; 
+}
+
+.text-box {
+    flex: 1;            
+    text-align: right;   
+}
+
+.map-box {
+    flex: 1;              
+}
+
+@media (max-width: 600px) {
+    .container { flex-direction: column; }
+}
+    </style>
+</head>
+<body>
+    
+
+    
+
+<!--  -->
+   
+<div class="container">
+    <div class="card">
+    <a href="cairo.html" target="_blank">
+        <img src="../images/Cairo .jpg" alt="Cairo">
+    </a>
+    <div class="card">
+    
+    <div class="card-content">
+        <h3>Sofitel Cairo Downtown</h3>
+        <p class="location">Cairo, Egypt</p>
+        
+        <!-- مستطيل العرض الأحمر -->
+        <div class="discount-tag">خصم 13% أقل من المواقع الأخرى</div>
+        
+        <div class="price-section">
+            <!-- السعر القديم مشطوب عليه -->
+            <del class="old-price">$150</del> 
+            <!-- السعر الجديد Bold -->
+            <span class="new-price">$110</span> 
+            <small>لكل ليلة</small>
+        </div>
+    </div>
+</div>
+    
+</div>
+
+        <!-- النص -->
+
+        <div class="text-box">
+            <h1>مدينة القاهرة</h1>
+            <p>
+                القاهرة هي عاصمة مصر وأكبر مدنها. تتميز بموقعها الرائع على نهر النيل، 
+                وتضم العديد من المعالم السياحية والتاريخية العريقة.
+            </p>
+            <h2>لا تتردد في الحجز بفندقنا</h2>
+                    <button onclick="window.location.href='cairo.html';" >
+   الحجز
+    </button>
+        </div>
+        
+        <!-- الخريطة -->
+        <div class="map-box">
+            <iframe  width="80%" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d110517.96965638282!2d31.290393231733308!3d30.04584916566745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2KfZhNmB2YbYp9iv2YI!5e0!3m2!1sar!2seg!4v1777955697929!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        
+
+
+
+</body>
+</html>

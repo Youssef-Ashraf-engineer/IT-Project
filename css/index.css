@@ -362,7 +362,7 @@ footer {
 .hotels-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 0.25fr));
-    justify-items: center;
+    justify-content: center;
     gap: 20px;
     width: 100%;
 }
@@ -415,4 +415,7 @@ a {
     flex-direction: column;
     gap: 10px;
 }
-@media(min-width:768px) {}
+/* @media(min-width:768px) {} */
+#err{
+    color:red;
+}

@@ -10,13 +10,14 @@ fetch("js/hotels.json")
         
         <a href="pages/hotel.html?id=${h.id}">
                     <div class="hotel-card" data-place="${h.gov}" data-start="${h.start}" data-end="${h.end}" data-number="${h.price}">
-                        <img src="images/gallery/hotel${h.id}/img (1).jpg" alt="">
+                        <img src="images/gallery/hotel${h.id}/img (0).jpg" alt="">
                         <div class="cardbody">
                             <h3 class="hotelName">${h.name}</h3>
                             <p class="location">📍${h.location}</p>
                             <p class="description">${h.description}</p>
                             <h5 class="price">⭐${h.rating}</h5>
                             <h5 class="price">${h.price} EGP/night</h5>
+                            <h5 class="price">${h.start} => ${h.end}</h5>
                             <button>view</button>
                         </div>
                     </div>  

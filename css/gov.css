@@ -1,0 +1,126 @@
+/* body {
+    background-color: #ffffff; */
+     /* خلفية بيضاء  */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+/* .slider-container {
+    width: 95%;
+    max-width: 1200px;
+    position: relative;
+} */
+
+/*تنسيق الأزرار  */
+/* .slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.slider-controls button {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.slider-controls button:hover {
+    background: #ccc;
+} */
+
+/* مسار الكروت */
+/* .slider-track {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+     يسمح بالتمرير */
+    /* scroll-behavior: smooth;
+    padding-bottom: 10px;
+} */
+
+/* إخفاء شريط التمرير  */
+/* .slider-track::-webkit-scrollbar {
+    display: none;
+} */
+
+/* تصميم الكارت */
+.hotel-card-item {
+    /* min-width: 160px;  */
+    /* height: 220px; */
+    border: 1px solid #555; /* إطار رمادي  */
+    /* border-radius: 12px; */
+    overflow: hidden;
+    /* background-color: #111; */
+}
+
+.slider-wrapper .hotel-card-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+/* تنسيق الكارت ليكون حاوية للشارة */
+.hotel-card-item {
+    position: relative;
+    overflow: hidden;
+    background: #1a1a1a;
+    border-radius: 12px;
+}
+
+/* مستطيل العرض الأحمر */
+.offer-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff0000;
+    color: #fff;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+/* منطقة الأسعار تحت الصورة */
+.card-details {
+    padding: 15px;
+    text-align: right;
+}
+
+.hotel-name {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+}
+
+/* السعر القديم المشطوب */
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+/* السعر الجديد العريض */
+.current-price {
+    color: #f0a500;
+    font-size: 17px;
+    font-weight: 900; /* Bold جداً للأهمية */
+}

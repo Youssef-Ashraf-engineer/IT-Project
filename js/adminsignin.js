@@ -8,15 +8,14 @@ const passwordInput = document.getElementById("password").value.trim();
 let isValid=false
 if (usernameInput === "") {
 
-    userNameError.textContent = "Please enter your username or email";
+    userNameError.textContent = "Please enter Admin username";
         isValid = false;
     }
 
     if (passwordInput === "") {
-        passwordError.textContent = "Please enter your password";
+        passwordError.textContent = "Please enter Admin password";
         isValid = false;
     }
-    // if (!isValid) return;
     if(usernameInput=="admin2025" && passwordInput=="2025"){
         isValid=true
         sessionStorage.setItem("loggedInAdmin", true);
