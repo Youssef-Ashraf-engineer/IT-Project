@@ -44,12 +44,13 @@
 
 .hotel-card {
     display: flex;
-    background: #fff;
+    background: var(--y2);
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     overflow: hidden;
     width: 100%;
     height: unset !important;
+    color: black;
 }
 
 .hotel-card img {

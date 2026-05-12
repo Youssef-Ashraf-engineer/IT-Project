@@ -13,7 +13,9 @@ function search(){
     let number = parseInt(hotel.dataset.number);
     const start= new Date(hotel.dataset.start);
     const end= new Date(hotel.dataset.end);
-    if(place!==placevalue && placevalue!="all"|| !(checkin>=start || checkout<=end) || number>numbervalue && numbervalue!=0){
+    console.log(end);
+    console.log(checkout)
+    if(place!==placevalue && placevalue!="all"|| !(checkin>=start && checkout<=end) || number>numbervalue && numbervalue!=0){
       hotel.parentElement.parentElement.style.display="none";
     }
     else{
