@@ -113,7 +113,7 @@ saveBtn.addEventListener("click", () => {
         return;
     }
 
-    const originalEmail = loggedInUser.Email;
+    const originalEmail = loggedInUser.Email;   /*Store original email to find the user in allUsers array later after update because the email might be changed*/
 
     loggedInUser.FirstName = firstName.value;
     loggedInUser.LastName = lastName.value;

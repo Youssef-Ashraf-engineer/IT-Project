@@ -226,7 +226,7 @@ a{
 .slider-wrapper {
     display: flex;
     gap: 40px;
-    overflow-x: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     padding: 15px 5px;
 }

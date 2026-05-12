@@ -106,7 +106,6 @@ else{
 }
 }
 const loggedIn = JSON.parse(sessionStorage.getItem("loggedInUser"));
-document
 if(!loggedIn){
     document.querySelector(".fa-user").style.display="none"
     document.querySelector(".profilebtn").style.display="none"
