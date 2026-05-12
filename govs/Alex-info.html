@@ -3,87 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandria Information</title>
+    <title>alex Information</title>
     <style>
+        @import "root.css";
         body{
-            background-color:honeydew;
+            background-color:white;
         }
-    
+        .photo{
+            width: 100%;
+        }
+        img{
+            border-radius: 30px;
+            width: 100%;
+        }
         .container {
-    display: flex;        
-    gap: 20px;            
-    padding: 20px;
-    align-items: start; 
-}
-
-.text-box {
-    flex: 1;            
-    text-align: right;   
-}
-
-.map-box {
-    flex: 1;              
-}
-
-@media (max-width: 600px) {
-    .container { flex-direction: column; }
-}
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            align-items: start;
+        }
+        h1{
+            color: var(--c8);
+            font-size: 48px;
+        }
+        p{
+            color: var(--c8);
+            font-size: 18px;
+        }
+        h3{
+            color: var(--c8);
+            font-size: 24px;
+        }
+        button{
+            border-radius: 7px;
+            padding: 6px 12px;
+            background-color: var(--y6);
+            color: var(--c8);
+            border: none;
+        }
+        .map-box{
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        iframe{
+            width: 1000px;
+            height: 500px;
+        }
+        @media (max-width: 600px) {
+            .container { flex-direction: column; }
+        }
     </style>
 </head>
 <body>
-    
-
-    
-
-<!--  -->
-   
-<div class="container">
-    <!-- بداية الكارت -->
-<div class="card">
-    <!-- الرابط يبدأ هنا ويغلف كل اللي جواه -->
-    <a href="Alex.html" target="_blank" style="text-decoration: none; color: inherit;">        
-        <!-- 1. الصورة -->
-        <img src="../images/Alex.jpg" alt="Alexandria">
-
-        <!-- 2. محتوى المعلومات والأسعار -->
-        <div class="card-content">
-            <h3>Sofitel Alexandria</h3>
-            <p class="location">Alexandria, Egypt</p>
-
-            <div class="discount-tag">خصم 25% أقل من المواقع الأخرى</div>
-
-            <div class="price-section">
-                <del class="old-price">$260</del>
-                <span class="new-price">$195</span>
-                <small>لكل ليلة</small>
-            </div>
+    <div class="container">
+        <div class="photo">
+            <img src="alex-image-map.jpg" alt="alex" usemap="#alex-map">
+            <map name="alex-map">
+                <area shape="rect" coords="110,1,862,428" href="https://en.wikipedia.org/wiki/Citadel_of_Qaitbay" alt="alex Governorate">
+            </map>
         </div>
 
-    </a> <!-- قفلة الرابط هنا بعد ما خلصنا كل محتوى الكارت -->
-</div> <!-- قفلة الكارت -->
     
-</div>
-
         <!-- النص -->
 
         <div class="text-box">
-            <h1>مدينة الإسكندرية</h1>
+            <h1>alex City</h1>
             <p>
-                
+                Alexandria is a coastal city in northern Egypt located along the Mediterranean Sea. It is known for its beautiful seafront, moderate climate, and deep historical roots. Alexandria Governorate was founded by Alexander the Great and became one of the most important cultural centers of the ancient world. It is famous for landmarks such as the Bibliotheca Alexandrina, Qaitbay Citadel, and Stanley Bridge. Beyond its historical importance, Alexandria is a major center for trade, tourism, and education, combining Mediterranean charm with modern urban life.
             </p>
-            <h2>لا تتردد في الحجز بفندقنا</h2>
-                    <button onclick="window.location.href='Alex.html';" >
-   الحجز
-    </button>
+            <h3>Don't hesitate to book our hotel</h3>
+            <button onclick="window.location.href='alex.html';" >
+                Book Now
+            </button>
         </div>
         
         <!-- الخريطة -->
         <div class="map-box">
-            <iframe width="70%" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d132690.55645469602!2d30.064482595510647!3d31.258858949559496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sAlex%20hotels!5e1!3m2!1sar!2seg!4v1778014016968!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
-        
-
-
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218359.75267862238!2d30.119701082035288!3d31.224299392628367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2z2KfZhNil2LPZg9mG2K_YsdmK2KnYjCDZhdit2KfZgdi42Kkg2KfZhNil2LPZg9mG2K_YsdmK2Kk!5e0!3m2!1sar!2seg!4v1778544275951!5m2!1sar!2seg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 </body>
 </html>
