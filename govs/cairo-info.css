@@ -122,3 +122,10 @@ body {
     font-size: 17px;
     font-weight: 900; /* Bold جداً للأهمية */
 }
+.text-box button{
+    background-color: #ff7a00;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
